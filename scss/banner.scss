@@ -1,7 +1,68 @@
-.banner{
-    height: 787px;
+
+/*.promo{
+    position: relative;
     background-color: #de5d5d;
-    .slick-slider__list{
-    }
-}
+    height: 787px;
+    .promo__banner{
+        position: absolute;
+        left: 55%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 1554px;
+        height: 689px;
+        background: url("../img/iphone.png")  no-repeat center bottom;
+        height: 689px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        .container{
+            .cta-block{
+                margin: 0 auto;
+                h2{
+                    margin-top: 197px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    font-size: 86px;
+                    line-height: 1.2;
+                    font-weight: 600;
+                    color: #ffffff;
+                }
+                .cta-block__buttons{
+                    margin: 75px auto 0 auto;
+                    display: flex;
+                    max-width: 543px;
+                    .cta-block__button_first{
+                        margin-right: 29px;
+                    }
+                    a{
+                        font-size: 30px;
+                        line-height: 1.2;
+                        font-weight: 400;
+                        color: #ffffff;
+                    }
+                    .cta-block__button{
+                        display: block;
+                        width: 257px;
+                        height: 77px;
+                        border: 3px solid #ffffff;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }*/
 /*background: url("../img/iphone.png") 0 0/100% no-repeat;*/
+.banner{
+  margin-top: 98px;
+  height: 689px;
+  background: #de5d5d url('../img/iphone.png') 230px 0 no-repeat;
+  /*.banner__backgroud{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    height: 687px;
+    width: 1554px;
+
+  }*/
+}

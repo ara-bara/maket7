@@ -1,9 +1,13 @@
 @import "nullstyle.scss";
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&family=Varela+Round&display=swap');
+@font-face {
+  font-family: 'Varela Round', sans-serif;
+}
 
 body{
   height: 100%;
   line-height: 22px;
+  font-family: 'Varela Round', sans-serif;
 }
 
 main{
