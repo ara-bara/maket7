@@ -1,9 +1,57 @@
 @media (max-width: 1800px){
-
+  .banner{
+    background: #de5d5d url('../img/iphone.png') 50% 0 no-repeat;
+    .container{
+      .cta-block{
+        h2{
+          margin: 0 auto;
+        }
+        .cta-block__buttons{
+          margin: 77px auto 0 auto;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 1200px) {
   .container {
     max-width: 970px;
+  }
+  .banner{
+    .container{
+      .cta-block{
+        h2{
+          font-size: 75px;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+        }
+        .cta-block__buttons{
+          margin: 77px auto 0 auto;
+          &_first{
+            width: 230px;
+            height: 65px;
+            img{
+              padding: 4px 0 0 5px;
+            }
+            a{
+              @include ctabutton;
+              padding: 10px 0 0 12px;
+            }
+          }
+          &_second{
+            width: 230px;
+            height: 65px;
+            img{
+              padding:4px 0 0 5px;
+            }
+            a{
+              @include ctabutton;
+              padding: 10px 0 0 15px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -11,10 +59,63 @@
   .container {
     max-width: 750px;
   }
+  .banner{
+    .container{
+      .cta-block{
+        h2{
+          font-size: 65px;
+          letter-spacing: 0;
+        }
+        .cta-block__buttons{
+          margin: 77px auto 0 auto;
+          max-width: 500px;
+          &_first{
+            width: 230px;
+            height: 65px;
+            img{
+              padding: 4px 0 0 5px;
+            }
+            a{
+              @include ctabutton;
+              padding: 10px 0 0 12px;
+            }
+          }
+          &_second{
+            width: 230px;
+            height: 65px;
+            img{
+              padding:4px 0 0 5px;
+            }
+            a{
+              @include ctabutton;
+              padding: 10px 0 0 15px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
-
+  .banner{
+    .container{
+      .cta-block{
+        h2{
+          font-size: 45px;
+        }
+        .cta-block__buttons{
+          flex-direction: column;
+          &_first{
+            margin: 0 auto 20px auto;
+          }
+          &_second{
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
 }
 
 

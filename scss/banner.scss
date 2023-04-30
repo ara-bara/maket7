@@ -7,7 +7,6 @@
       margin: 0 auto;
       h2{
         font-family: 'Montserrat', sans-serif;
-        /* Style for "Capture an" */
         padding-top: 196px;
         margin-left: 170px;
         color: #ffffff;
@@ -18,19 +17,13 @@
         line-height: normal;
         text-align: center;
       }
-      .cta-block__buttons{
+      &__buttons{
         margin: 77px 0 0 394px;
         display: flex;
         justify-content: space-between;
         max-width: 543px;
-        .cta-block__button{
-          display: block;
-          width: 257px;
-          height: 77px;
-          border: 3px solid #ffffff;
-          border-radius: 5px;
-        }
-        .cta-block__button_first{
+        &_first{
+          @include bb;
           img{
             padding: 7px 0 0 20px;
           }
@@ -39,7 +32,8 @@
             padding: 15px 0 0 12px;
           }
         }
-        .cta-block__button_second{
+        &_second{
+          @include bb;
           img{
             padding:11px 0 0 27px;
           }

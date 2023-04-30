@@ -7,7 +7,6 @@
 }
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -78,6 +77,8 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Montserrat", sans-serif;
 }
+/* banner button*/
+/* cta button style */
 body {
   height: 100%;
   line-height: 22px;
@@ -85,13 +86,20 @@ body {
 }
 
 main {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .wrapper {
   min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container {
@@ -99,8 +107,9 @@ main {
   margin: 0 auto;
 }
 
-/* cta button style */
 .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -109,9 +118,15 @@ main {
 }
 
 .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slick-dots li {
@@ -145,7 +160,6 @@ main {
 }
 .banner .container .cta-block h2 {
   font-family: "Montserrat", sans-serif;
-  /* Style for "Capture an" */
   padding-top: 196px;
   margin-left: 170px;
   color: #ffffff;
@@ -156,23 +170,27 @@ main {
   line-height: normal;
   text-align: center;
 }
-.banner .container .cta-block .cta-block__buttons {
+.banner .container .cta-block__buttons {
   margin: 77px 0 0 394px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 543px;
 }
-.banner .container .cta-block .cta-block__buttons .cta-block__button {
+.banner .container .cta-block__buttons_first {
   display: block;
   width: 257px;
   height: 77px;
   border: 3px solid #ffffff;
   border-radius: 5px;
 }
-.banner .container .cta-block .cta-block__buttons .cta-block__button_first img {
+.banner .container .cta-block__buttons_first img {
   padding: 7px 0 0 20px;
 }
-.banner .container .cta-block .cta-block__buttons .cta-block__button_first a {
+.banner .container .cta-block__buttons_first a {
   display: inline-block;
   font-size: 30px;
   line-height: 1.2;
@@ -180,10 +198,17 @@ main {
   color: #ffffff;
   padding: 15px 0 0 12px;
 }
-.banner .container .cta-block .cta-block__buttons .cta-block__button_second img {
+.banner .container .cta-block__buttons_second {
+  display: block;
+  width: 257px;
+  height: 77px;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+}
+.banner .container .cta-block__buttons_second img {
   padding: 11px 0 0 27px;
 }
-.banner .container .cta-block .cta-block__buttons .cta-block__button_second a {
+.banner .container .cta-block__buttons_second a {
   display: inline-block;
   font-size: 30px;
   line-height: 1.2;
@@ -192,13 +217,117 @@ main {
   padding: 15px 0 0 15px;
 }
 
+@media (max-width: 1800px) {
+  .banner {
+    background: #de5d5d url("../img/iphone.png") 50% 0 no-repeat;
+  }
+  .banner .container .cta-block h2 {
+    margin: 0 auto;
+  }
+  .banner .container .cta-block .cta-block__buttons {
+    margin: 77px auto 0 auto;
+  }
+}
 @media (max-width: 1200px) {
   .container {
     max-width: 970px;
+  }
+  .banner .container .cta-block h2 {
+    font-size: 75px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+  .banner .container .cta-block .cta-block__buttons {
+    margin: 77px auto 0 auto;
+  }
+  .banner .container .cta-block .cta-block__buttons_first {
+    width: 230px;
+    height: 65px;
+  }
+  .banner .container .cta-block .cta-block__buttons_first img {
+    padding: 4px 0 0 5px;
+  }
+  .banner .container .cta-block .cta-block__buttons_first a {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 10px 0 0 12px;
+  }
+  .banner .container .cta-block .cta-block__buttons_second {
+    width: 230px;
+    height: 65px;
+  }
+  .banner .container .cta-block .cta-block__buttons_second img {
+    padding: 4px 0 0 5px;
+  }
+  .banner .container .cta-block .cta-block__buttons_second a {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 10px 0 0 15px;
   }
 }
 @media (max-width: 992px) {
   .container {
     max-width: 750px;
+  }
+  .banner .container .cta-block h2 {
+    font-size: 65px;
+    letter-spacing: 0;
+  }
+  .banner .container .cta-block .cta-block__buttons {
+    margin: 77px auto 0 auto;
+    max-width: 500px;
+  }
+  .banner .container .cta-block .cta-block__buttons_first {
+    width: 230px;
+    height: 65px;
+  }
+  .banner .container .cta-block .cta-block__buttons_first img {
+    padding: 4px 0 0 5px;
+  }
+  .banner .container .cta-block .cta-block__buttons_first a {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 10px 0 0 12px;
+  }
+  .banner .container .cta-block .cta-block__buttons_second {
+    width: 230px;
+    height: 65px;
+  }
+  .banner .container .cta-block .cta-block__buttons_second img {
+    padding: 4px 0 0 5px;
+  }
+  .banner .container .cta-block .cta-block__buttons_second a {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 10px 0 0 15px;
+  }
+}
+@media (max-width: 768px) {
+  .banner .container .cta-block h2 {
+    font-size: 45px;
+  }
+  .banner .container .cta-block .cta-block__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .banner .container .cta-block .cta-block__buttons_first {
+    margin: 0 auto 20px auto;
+  }
+  .banner .container .cta-block .cta-block__buttons_second {
+    margin: 0 auto;
   }
 }

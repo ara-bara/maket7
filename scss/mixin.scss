@@ -1,0 +1,17 @@
+/* banner button*/
+@mixin bb{
+  display: block;
+  width: 257px;
+  height: 77px;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+}
+
+ /* cta button style */
+@mixin ctabutton{
+  display: inline-block;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}

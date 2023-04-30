@@ -7,6 +7,7 @@
 @font-face {
   font-family: 'Montserrat', sans-serif;
 }
+@import "mixin.scss";
 
 body{
   height: 100%;
@@ -27,15 +28,6 @@ main{
 .container{
   max-width: 1170px;
   margin: 0 auto;
-}
-
-/* cta button style */
-@mixin ctabutton{
-  display: inline-block;
-  font-size: 30px;
-  line-height: 1.2;
-  font-weight: 400;
-  color: #ffffff;
 }
 
 .slick-track{
