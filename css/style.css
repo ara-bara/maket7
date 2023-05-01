@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&family=Varela+Round&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.cdnfonts.com/css/myriad-pro");
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +8,7 @@
 }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -77,6 +79,9 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Montserrat", sans-serif;
 }
+@font-face {
+  font-family: "Myriad Pro", sans-serif;
+}
 /* banner button*/
 /* cta button style */
 body {
@@ -86,20 +91,13 @@ body {
 }
 
 main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .wrapper {
   min-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .container {
@@ -108,8 +106,6 @@ main {
 }
 
 .slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -118,15 +114,9 @@ main {
 }
 
 .slick-dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .slick-dots li {
@@ -150,9 +140,26 @@ main {
   height: 12px;
   background-color: #ffffff;
 }*/
+.navbar {
+  height: 98px;
+}
+.navbar-brand {
+  color: white;
+  height: 98px;
+  font-size: 60px;
+  line-height: 102px;
+  font-weight: 700;
+  font-family: "Myriad Pro", sans-serif;
+}
+.navbar .nav-link {
+  color: white;
+}
+.navbar .container {
+  margin-left: 22%;
+}
+
 .banner {
-  margin-top: 98px;
-  height: 689px;
+  height: 697px;
   background: #de5d5d url("../img/iphone.png") 230px 0 no-repeat;
 }
 .banner .container .cta-block {
@@ -161,23 +168,19 @@ main {
 .banner .container .cta-block h2 {
   font-family: "Montserrat", sans-serif;
   padding-top: 196px;
-  margin-left: 170px;
+  margin-left: 163px;
   color: #ffffff;
-  font-size: 85px;
-  font-weight: 550;
+  font-size: 90px;
+  font-weight: 600;
   font-style: normal;
-  letter-spacing: 1.2px;
+  letter-spacing: 0;
   line-height: normal;
   text-align: center;
 }
 .banner .container .cta-block__buttons {
-  margin: 77px 0 0 394px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin: 72px 0 0 33.4%;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   max-width: 543px;
 }
 .banner .container .cta-block__buttons_first {
@@ -319,10 +322,7 @@ main {
     font-size: 45px;
   }
   .banner .container .cta-block .cta-block__buttons {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .banner .container .cta-block .cta-block__buttons_first {
     margin: 0 auto 20px auto;

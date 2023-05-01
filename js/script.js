@@ -8,3 +8,9 @@ $(document).ready(function(){
     });
 });
 
+//burger menu
+$(document).ready(function(){
+    $('.navbar-toggler').click(function(){
+        $('.navbar-collapse').toggleClass('show');
+    });
+});

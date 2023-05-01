@@ -3,9 +3,13 @@
 @font-face {
   font-family: 'Varela Round', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 @font-face {
   font-family: 'Montserrat', sans-serif;
+}
+@import url('https://fonts.cdnfonts.com/css/myriad-pro');
+@font-face {
+  font-family: 'Myriad Pro', sans-serif;
 }
 @import "mixin.scss";
 
@@ -65,5 +69,6 @@ main{
   background-color: #ffffff;
 }*/
 
+@import "header.scss";
 @import "banner.scss";
 @import "adaptive.scss";

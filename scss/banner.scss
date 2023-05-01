@@ -1,6 +1,5 @@
 .banner{
-  margin-top: 98px;
-  height: 689px;
+  height: 697px;
   background: #de5d5d url('../img/iphone.png') 230px 0 no-repeat;
   .container{
     .cta-block{
@@ -8,17 +7,17 @@
       h2{
         font-family: 'Montserrat', sans-serif;
         padding-top: 196px;
-        margin-left: 170px;
+        margin-left: 163px;
         color: #ffffff;
-        font-size: 85px;
-        font-weight: 550;
+        font-size: 90px;
+        font-weight: 600;
         font-style: normal;
-        letter-spacing: 1.2px;
+        letter-spacing: 0;
         line-height: normal;
         text-align: center;
       }
       &__buttons{
-        margin: 77px 0 0 394px;
+        margin: 72px 0 0 33.4%;
         display: flex;
         justify-content: space-between;
         max-width: 543px;
