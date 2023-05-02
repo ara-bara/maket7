@@ -141,11 +141,11 @@ main {
   background-color: #ffffff;
 }*/
 .navbar {
-  height: 98px;
+  height: 90px;
 }
 .navbar-brand {
   color: white;
-  height: 98px;
+  height: 96px;
   font-size: 60px;
   line-height: 102px;
   font-weight: 700;
@@ -167,7 +167,7 @@ main {
 }
 .banner .container .cta-block h2 {
   font-family: "Montserrat", sans-serif;
-  padding-top: 196px;
+  padding-top: 205px;
   margin-left: 163px;
   color: #ffffff;
   font-size: 90px;
@@ -178,7 +178,7 @@ main {
   text-align: center;
 }
 .banner .container .cta-block__buttons {
-  margin: 72px 0 0 33.4%;
+  margin: 68px 0 0 33.4%;
   display: flex;
   justify-content: space-between;
   max-width: 543px;
@@ -218,6 +218,86 @@ main {
   font-weight: 400;
   color: #ffffff;
   padding: 15px 0 0 15px;
+}
+
+.benefits {
+  height: 695px;
+}
+.benefits .container {
+  margin-left: 418px;
+}
+.benefits .container h2 {
+  margin-top: 102px;
+  margin-bottom: 58px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #3a3a3a;
+  text-align: center;
+}
+.benefits .container .benefits-list {
+  display: flex;
+  justify-content: space-around;
+}
+.benefits .container .benefits-list__item {
+  width: 33.33%;
+}
+.benefits .container .benefits-list__item img {
+  width: 229px;
+  height: 229px;
+  display: block;
+}
+.benefits .container .benefits-list__item h3 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #666666;
+}
+.benefits .container .benefits-list__item p {
+  text-align: center;
+  width: 250px;
+  font-size: 16px;
+}
+.benefits .container .benefits-list__item_start img {
+  margin: 0 0 0 57px;
+}
+.benefits .container .benefits-list__item_start h3 {
+  margin-top: 40px;
+  margin-right: 54px;
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+.benefits .container .benefits-list__item_start p {
+  margin: -4px 0 0 40px;
+  line-height: 23.5px;
+}
+.benefits .container .benefits-list__item_middle img {
+  width: 231px;
+  height: 230px;
+  margin: 1px 0 0 74px;
+}
+.benefits .container .benefits-list__item_middle h3 {
+  margin-top: 38px;
+  margin-right: 6px;
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+.benefits .container .benefits-list__item_middle p {
+  margin: -4px 0 0 64px;
+  line-height: 23.5px;
+}
+.benefits .container .benefits-list__item_end img {
+  margin: 1px 0 0 90px;
+}
+.benefits .container .benefits-list__item_end h3 {
+  margin-top: 39px;
+  margin-left: 28px;
+}
+.benefits .container .benefits-list__item_end p {
+  margin: -4px 0 0 81px;
+  line-height: 23.5px;
 }
 
 @media (max-width: 1800px) {

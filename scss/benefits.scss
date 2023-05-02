@@ -1,0 +1,85 @@
+.benefits{
+  height: 695px;
+  .container{
+    margin-left: 418px;
+    h2{
+      margin-top: 102px;
+      margin-bottom: 58px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 48px;
+      line-height: 1.2;
+      font-weight: 600;
+      color: #3a3a3a;
+      text-align: center;
+    }
+    .benefits-list{
+      display: flex;
+      justify-content: space-around;
+      &__item{
+        width: 33.33%;
+        img{
+          width: 229px;
+          height: 229px;
+          display: block;
+        }
+        h3{
+          font-family: 'Montserrat', sans-serif;
+          text-align: center;
+          font-size: 18px;
+          font-weight: 600;
+          color: #666666;
+        }
+        p{
+          text-align: center;
+          width: 250px;
+          font-size: 16px;
+        }
+      }
+      &__item_start {
+        img {
+          margin: 0 0 0 57px;
+        }
+        h3{
+          margin-top: 40px;
+          margin-right: 54px;
+          letter-spacing: 0;
+          word-spacing: 0;
+        }
+        p{
+          margin: -4px 0 0 40px;
+          line-height: 23.5px;
+        }
+      }
+      &__item_middle {
+        img {
+          width: 231px;
+          height: 230px;
+          margin: 1px 0 0 74px;
+        }
+        h3{
+          margin-top: 38px;
+          margin-right: 6px;
+          letter-spacing: 0;
+          word-spacing: 0;
+        }
+        p{
+          margin: -4px 0 0 64px;
+          line-height: 23.5px;
+        }
+      }
+      &__item_end {
+        img {
+          margin: 1px 0 0 90px;
+        }
+        h3{
+          margin-top: 39px;
+          margin-left: 28px;
+        }
+        p{
+          margin: -4px 0 0 81px;
+          line-height: 23.5px;
+        }
+      }
+    }
+  }
+}
