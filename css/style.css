@@ -100,9 +100,10 @@ main {
   flex-direction: column;
 }
 
-.container {
+.container-custom {
   max-width: 1170px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .slick-track {
@@ -140,34 +141,34 @@ main {
   height: 12px;
   background-color: #ffffff;
 }*/
-.navbar {
-  height: 90px;
-}
-.navbar-brand {
+/*.navbar {
+  height: 98px;
+  &-brand {
   color: white;
   height: 96px;
   font-size: 60px;
   line-height: 102px;
   font-weight: 700;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
 }
-.navbar .nav-link {
+.nav-link {
   color: white;
 }
-.navbar .container {
+.container{
   margin-left: 22%;
 }
-
+}*/
 .banner {
-  height: 697px;
+  margin-top: 98px;
+  height: 689px;
   background: #de5d5d url("../img/iphone.png") 230px 0 no-repeat;
 }
-.banner .container .cta-block {
+.banner .container-custom .cta-block {
   margin: 0 auto;
 }
-.banner .container .cta-block h2 {
+.banner .container-custom .cta-block h2 {
   font-family: "Montserrat", sans-serif;
-  padding-top: 205px;
+  padding-top: 196px;
   margin-left: 163px;
   color: #ffffff;
   font-size: 90px;
@@ -177,23 +178,23 @@ main {
   line-height: normal;
   text-align: center;
 }
-.banner .container .cta-block__buttons {
-  margin: 68px 0 0 33.4%;
+.banner .container-custom .cta-block__buttons {
+  margin: 70px 0 0 33.4%;
   display: flex;
   justify-content: space-between;
   max-width: 543px;
 }
-.banner .container .cta-block__buttons_first {
+.banner .container-custom .cta-block__buttons_first {
   display: block;
   width: 257px;
   height: 77px;
   border: 3px solid #ffffff;
   border-radius: 5px;
 }
-.banner .container .cta-block__buttons_first img {
+.banner .container-custom .cta-block__buttons_first img {
   padding: 7px 0 0 20px;
 }
-.banner .container .cta-block__buttons_first a {
+.banner .container-custom .cta-block__buttons_first a {
   display: inline-block;
   font-size: 30px;
   line-height: 1.2;
@@ -201,17 +202,17 @@ main {
   color: #ffffff;
   padding: 15px 0 0 12px;
 }
-.banner .container .cta-block__buttons_second {
+.banner .container-custom .cta-block__buttons_second {
   display: block;
   width: 257px;
   height: 77px;
   border: 3px solid #ffffff;
   border-radius: 5px;
 }
-.banner .container .cta-block__buttons_second img {
+.banner .container-custom .cta-block__buttons_second img {
   padding: 11px 0 0 27px;
 }
-.banner .container .cta-block__buttons_second a {
+.banner .container-custom .cta-block__buttons_second a {
   display: inline-block;
   font-size: 30px;
   line-height: 1.2;
@@ -221,14 +222,12 @@ main {
 }
 
 .benefits {
-  height: 695px;
+  height: 593px;
 }
-.benefits .container {
-  margin-left: 418px;
-}
-.benefits .container h2 {
+.benefits .container-custom h2 {
   margin-top: 102px;
   margin-bottom: 58px;
+  margin-left: 523px;
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   line-height: 1.2;
@@ -236,68 +235,104 @@ main {
   color: #3a3a3a;
   text-align: center;
 }
-.benefits .container .benefits-list {
-  display: flex;
-  justify-content: space-around;
-}
-.benefits .container .benefits-list__item {
-  width: 33.33%;
-}
-.benefits .container .benefits-list__item img {
+.benefits .container-custom .benefits-list__item img {
   width: 229px;
   height: 229px;
   display: block;
 }
-.benefits .container .benefits-list__item h3 {
+.benefits .container-custom .benefits-list__item h3 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
   color: #666666;
 }
-.benefits .container .benefits-list__item p {
+.benefits .container-custom .benefits-list__item p {
   text-align: center;
   width: 250px;
   font-size: 16px;
 }
-.benefits .container .benefits-list__item_start img {
-  margin: 0 0 0 57px;
+.benefits .container-custom .benefits-list__item_start img {
+  margin: 0 0 0 54px;
 }
-.benefits .container .benefits-list__item_start h3 {
+.benefits .container-custom .benefits-list__item_start h3 {
   margin-top: 40px;
-  margin-right: 54px;
-  letter-spacing: 0;
-  word-spacing: 0;
+  margin-left: 46px;
 }
-.benefits .container .benefits-list__item_start p {
-  margin: -4px 0 0 40px;
+.benefits .container-custom .benefits-list__item_start p {
+  margin: -4px 0 0 37px;
   line-height: 23.5px;
 }
-.benefits .container .benefits-list__item_middle img {
+.benefits .container-custom .benefits-list__item_middle img {
   width: 231px;
   height: 230px;
-  margin: 1px 0 0 74px;
+  margin: 1px 0 0 57px;
 }
-.benefits .container .benefits-list__item_middle h3 {
+.benefits .container-custom .benefits-list__item_middle h3 {
   margin-top: 38px;
-  margin-right: 6px;
-  letter-spacing: 0;
-  word-spacing: 0;
+  margin-left: 66px;
 }
-.benefits .container .benefits-list__item_middle p {
-  margin: -4px 0 0 64px;
+.benefits .container-custom .benefits-list__item_middle p {
+  margin: -4px 0 0 47px;
   line-height: 23.5px;
 }
-.benefits .container .benefits-list__item_end img {
-  margin: 1px 0 0 90px;
+.benefits .container-custom .benefits-list__item_end img {
+  margin: 1px 0 0 59px;
 }
-.benefits .container .benefits-list__item_end h3 {
+.benefits .container-custom .benefits-list__item_end h3 {
   margin-top: 39px;
-  margin-left: 28px;
+  margin-left: 73px;
 }
-.benefits .container .benefits-list__item_end p {
-  margin: -4px 0 0 81px;
+.benefits .container-custom .benefits-list__item_end p {
+  margin: -4px 0 0 50px;
   line-height: 23.5px;
+}
+
+.share {
+  height: 734px;
+  background-color: #262626;
+}
+.share .container-custom .share-img {
+  margin-top: 72px;
+  margin-left: 80px;
+}
+.share .container-custom .share-item {
+  padding-left: 13px;
+}
+.share .container-custom .share-item__title h3 {
+  padding-top: 184px;
+  margin-left: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: white;
+}
+.share .container-custom .share-item__info {
+  padding-top: 10px;
+  padding-left: 3px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #aeaeae;
+}
+.share .container-custom .share-item__slider-list .slider-item {
+  display: flex;
+}
+.share .container-custom .share-item__slider-list .slider-item__img {
+  margin-top: 52px;
+  margin-left: 4px;
+  width: 170px;
+  height: 93px;
+}
+.share .container-custom .share-item__slider-list .slider-item__paragraph {
+  margin-top: 46px;
+  margin-left: 31px;
+  padding-right: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #aeaeae;
 }
 
 @media (max-width: 1800px) {

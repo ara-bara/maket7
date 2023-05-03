@@ -1,10 +1,10 @@
 .benefits{
-  height: 695px;
-  .container{
-    margin-left: 418px;
+  height: 593px;
+  .container-custom{
     h2{
       margin-top: 102px;
       margin-bottom: 58px;
+      margin-left: 523px;
       font-family: 'Montserrat', sans-serif;
       font-size: 48px;
       line-height: 1.2;
@@ -13,10 +13,7 @@
       text-align: center;
     }
     .benefits-list{
-      display: flex;
-      justify-content: space-around;
       &__item{
-        width: 33.33%;
         img{
           width: 229px;
           height: 229px;
@@ -37,16 +34,14 @@
       }
       &__item_start {
         img {
-          margin: 0 0 0 57px;
+          margin: 0 0 0 54px;
         }
         h3{
           margin-top: 40px;
-          margin-right: 54px;
-          letter-spacing: 0;
-          word-spacing: 0;
+          margin-left: 46px;
         }
         p{
-          margin: -4px 0 0 40px;
+          margin: -4px 0 0 37px;
           line-height: 23.5px;
         }
       }
@@ -54,29 +49,27 @@
         img {
           width: 231px;
           height: 230px;
-          margin: 1px 0 0 74px;
+          margin: 1px 0 0 57px;
         }
         h3{
           margin-top: 38px;
-          margin-right: 6px;
-          letter-spacing: 0;
-          word-spacing: 0;
+          margin-left: 66px;
         }
         p{
-          margin: -4px 0 0 64px;
+          margin: -4px 0 0 47px;
           line-height: 23.5px;
         }
       }
       &__item_end {
         img {
-          margin: 1px 0 0 90px;
+          margin: 1px 0 0 59px;
         }
         h3{
           margin-top: 39px;
-          margin-left: 28px;
+          margin-left: 73px;
         }
         p{
-          margin: -4px 0 0 81px;
+          margin: -4px 0 0 50px;
           line-height: 23.5px;
         }
       }
