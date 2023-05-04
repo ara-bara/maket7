@@ -84,6 +84,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* banner button*/
 /* cta button style */
+/*margin top and left*/
+/*margin top and left*/
 body {
   height: 100%;
   line-height: 22px;
@@ -116,15 +118,12 @@ main {
 
 .slick-dots {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
-
 .slick-dots li {
-  margin: 0 7px;
+  margin: 0 4px;
 }
-
-.slick-dots button {
+.slick-dots li button {
   font-size: 0;
   width: 12px;
   height: 12px;
@@ -133,14 +132,11 @@ main {
   border-radius: 50%;
 }
 
-/*
-.slick-active{
-  font-size: 0;
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
+.slick-dots li.slick-active button {
   background-color: #ffffff;
-}*/
+  opacity: 1;
+}
+
 /*.navbar {
   height: 98px;
   &-brand {
@@ -289,7 +285,6 @@ main {
 }
 
 .share {
-  height: 734px;
   background-color: #262626;
 }
 .share .container-custom .share-img {
@@ -297,11 +292,17 @@ main {
   margin-left: 80px;
 }
 .share .container-custom .share-item {
-  padding-left: 13px;
+  padding-left: 11px;
+}
+.share .container-custom .share-item .slick-dots {
+  padding-left: 1px;
+}
+.share .container-custom .share-item .slick-dots li {
+  margin: 31px 4px;
 }
 .share .container-custom .share-item__title h3 {
   padding-top: 184px;
-  margin-left: 1px;
+  margin-left: 2px;
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   line-height: 1.2;
@@ -310,7 +311,7 @@ main {
 }
 .share .container-custom .share-item__info {
   padding-top: 10px;
-  padding-left: 3px;
+  padding-left: 6px;
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
@@ -320,8 +321,8 @@ main {
   display: flex;
 }
 .share .container-custom .share-item__slider-list .slider-item__img {
-  margin-top: 52px;
-  margin-left: 4px;
+  margin-top: 51px;
+  margin-left: 6px;
   width: 170px;
   height: 93px;
 }
@@ -344,6 +345,11 @@ main {
   }
   .banner .container .cta-block .cta-block__buttons {
     margin: 77px auto 0 auto;
+  }
+}
+@media (max-width: 1400px) {
+  .share .container-custom .share-img {
+    margin-left: 0;
   }
 }
 @media (max-width: 1200px) {
@@ -430,6 +436,14 @@ main {
     font-weight: 400;
     color: #ffffff;
     padding: 10px 0 0 15px;
+  }
+}
+@media (max-width: 991px) {
+  .share {
+    height: auto;
+  }
+  .share .container-custom .share-img {
+    margin-left: 25%;
   }
 }
 @media (max-width: 768px) {

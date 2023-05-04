@@ -15,3 +15,18 @@
   font-weight: 400;
   color: #ffffff;
 }
+
+$size :10px;
+$s :11px;
+
+/*margin top and left*/
+@mixin mtl($size,$s){
+  margin-top: $size;
+  margin-left: $s;
+}
+
+/*margin top and left*/
+@mixin ptl($size,$s){
+  padding-top: $size;
+  padding-left: $s;
+}

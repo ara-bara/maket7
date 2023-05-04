@@ -8,9 +8,20 @@ $(document).ready(function(){
     });
 });
 
+//share
+$(document).ready(function(){
+    $('.share-item__slider-list').slick({
+        arrows:false,
+        dots:true,
+        autoplay: true,
+        autoplaySpeed: 4000
+    });
+});
+
 //burger menu
+/*
 $(document).ready(function(){
     $('.navbar-toggler').click(function(){
         $('.navbar-collapse').toggleClass('show');
     });
-});
+});*/

@@ -13,6 +13,17 @@
     }
   }
 }
+
+@media (max-width: 1400px){
+  .share {
+    .container-custom {
+      .share-img {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 970px;
@@ -92,6 +103,17 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .share {
+    height: auto;
+    .container-custom {
+      .share-img {
+        margin-left: 25%;
       }
     }
   }

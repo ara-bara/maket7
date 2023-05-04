@@ -1,17 +1,22 @@
 .share{
-  height: 734px;
   background-color: #262626;
   .container-custom{
     .share-img{
       margin-top: 72px;
       margin-left: 80px;
     }
-    .share-item{
-      padding-left: 13px;
+    .share-item {
+      padding-left: 11px;
+      .slick-dots {
+        padding-left: 1px;
+        li{
+          margin: 31px 4px;
+        }
+      }
       &__title{
         h3{
           padding-top: 184px;
-          margin-left: 1px;
+          margin-left: 2px;
           font-family: 'Montserrat', sans-serif;
           font-size: 48px;
           line-height: 1.2;
@@ -20,8 +25,7 @@
         }
       }
       &__info{
-        padding-top: 10px;
-        padding-left: 3px;
+        @include ptl(10px,6px);
         font-size: 18px;
         line-height: 27px;
         font-weight: 400;
@@ -31,14 +35,12 @@
         .slider-item{
           display: flex;
           &__img{
-            margin-top: 52px;
-            margin-left: 4px;
+            @include mtl(51px,6px);
             width: 170px;
             height: 93px;
           }
           &__paragraph{
-            margin-top: 46px;
-            margin-left: 31px;
+            @include mtl(46px,31px);
             padding-right: 12px;
             font-size: 16px;
             line-height: 24px;
