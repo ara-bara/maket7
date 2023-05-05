@@ -18,6 +18,16 @@ $(document).ready(function(){
     });
 });
 
+
+//new features
+$(document).ready(function(){
+    $('.features-item__slider-list').slick({
+        arrows:false,
+        dots:true,
+        autoplay: true,
+        autoplaySpeed: 4000
+    });
+});
 //burger menu
 /*
 $(document).ready(function(){

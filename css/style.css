@@ -336,6 +336,82 @@ main {
   color: #aeaeae;
 }
 
+.new-features {
+  background-color: #313131;
+}
+.new-features .container-custom .new-features__img {
+  margin-top: 54px;
+  margin-left: 12px;
+}
+.new-features .container-custom .features-item ul {
+  padding-left: 30px;
+}
+.new-features .container-custom .features-item .slick-dots {
+  height: 43px;
+  background: #f06464;
+  border-radius: 0 0 5px 5px;
+}
+.new-features .container-custom .features-item .slick-dots li {
+  margin: 31px 4px;
+}
+.new-features .container-custom .features-item__title {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 168px;
+  margin-left: 69px;
+  font-size: 46px;
+  letter-spacing: 1.6px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+}
+.new-features .container-custom .features-item__info {
+  margin-top: 24px;
+  margin-left: 73px;
+  padding-right: 20px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #aeaeae;
+  letter-spacing: 0.02px;
+}
+.new-features .container-custom .features-item__slider-list {
+  width: 470px;
+  margin-left: 72px;
+}
+.new-features .container-custom .features-item__slider-list .slider-item {
+  margin-top: 65px;
+  display: flex;
+  height: 189px;
+  background-color: #ffffff;
+  border-radius: 5px 5px 0 0;
+}
+.new-features .container-custom .features-item__slider-list .slider-item__img {
+  width: 89px;
+  height: 89px;
+  margin-top: 43px;
+  margin-left: 31px;
+}
+.new-features .container-custom .features-item__slider-list .slider-item .slider-info__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #cc5858;
+  margin-top: 33px;
+  margin-left: 28px;
+  letter-spacing: 0.2px;
+}
+.new-features .container-custom .features-item__slider-list .slider-item .slider-info__paragraph {
+  margin-top: 9px;
+  margin-left: 30px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #666666;
+  padding-right: 50px;
+  letter-spacing: 0.1px;
+}
+
 @media (max-width: 1800px) {
   .banner {
     background: #de5d5d url("../img/iphone.png") 50% 0 no-repeat;
@@ -446,6 +522,11 @@ main {
     margin-left: 25%;
   }
 }
+@media (max-width: 850px) {
+  .share .container-custom .share-img {
+    margin-left: 20%;
+  }
+}
 @media (max-width: 768px) {
   .banner .container .cta-block h2 {
     font-size: 45px;
@@ -458,5 +539,37 @@ main {
   }
   .banner .container .cta-block .cta-block__buttons_second {
     margin: 0 auto;
+  }
+  .share .container-custom .share-img {
+    margin: 72px auto 0 auto;
+  }
+}
+@media (max-width: 650px) {
+  .share .container-custom .share-img {
+    margin: 72px auto 0 auto;
+  }
+  .share .container-custom .share-img img {
+    width: 100%;
+    height: auto;
+  }
+  .share .container-custom .share-item .slick-dots {
+    justify-content: center;
+  }
+  .share .container-custom .share-item__title h3 {
+    text-align: center;
+  }
+  .share .container-custom .share-item__info {
+    text-align: center;
+  }
+  .share .container-custom .share-item__slider-list .slider-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .share .container-custom .share-item__slider-list .slider-item__img {
+    display: block;
+    margin: 30px auto 0 auto;
+  }
+  .share .container-custom .share-item__slider-list .slider-item__paragraph {
+    text-align: center;
   }
 }
