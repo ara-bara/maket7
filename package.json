@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.14",
     "browser-sync": "^2.29.1",
     "gulp-postcss": "^9.0.1",
