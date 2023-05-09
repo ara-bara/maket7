@@ -2,9 +2,9 @@
   height: 593px;
   .container-custom{
     h2{
-      margin-top: 102px;
+      margin-top: 100px;
       margin-bottom: 58px;
-      margin-left: 523px;
+      padding-right: 37px;
       font-family: 'Montserrat', sans-serif;
       font-size: 48px;
       line-height: 1.2;
@@ -34,14 +34,14 @@
       }
       &__item_start {
         img {
-          margin: 0 0 0 54px;
+          margin: 2px 0 0 51px;
         }
         h3{
           margin-top: 40px;
-          margin-left: 46px;
+          margin-left: 42px;
         }
         p{
-          margin: -4px 0 0 37px;
+          margin: -4px 0 0 34px;
           line-height: 23.5px;
         }
       }
@@ -49,27 +49,27 @@
         img {
           width: 231px;
           height: 230px;
-          margin: 1px 0 0 57px;
+          margin: 3px 0 0 54px;
         }
         h3{
           margin-top: 38px;
-          margin-left: 66px;
+          margin-left: 64px;
         }
         p{
-          margin: -4px 0 0 47px;
+          margin: -4px 0 0 44px;
           line-height: 23.5px;
         }
       }
       &__item_end {
         img {
-          margin: 1px 0 0 59px;
+          margin: 3px 0 0 57px;
         }
         h3{
           margin-top: 39px;
-          margin-left: 73px;
+          margin-left: 66px;
         }
         p{
-          margin: -4px 0 0 50px;
+          margin: -4px 0 0 48px;
           line-height: 23.5px;
         }
       }

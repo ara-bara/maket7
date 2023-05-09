@@ -28,6 +28,111 @@
   .container {
     max-width: 970px;
   }
+  .new-features{
+    .container-custom{
+      .new-features__img{
+        margin-top: 80px;
+        margin-left: 0;
+        img{
+          height: 559px;
+          width: 393px;
+        }
+      }
+      .features-item{
+        &__title{
+          margin: 70px auto 0 auto;
+          text-align: center;
+        }
+        &__info{
+          margin: 24px auto 0 auto;
+          padding-right: 30px;
+          padding-left: 30px;
+        }
+        &__slider-list{
+          width: 470px;
+          margin: 0 auto;
+          .slider-item {
+            margin-top: 65px;
+            display: flex;
+            height: 189px;
+            background-color: #ffffff;
+            border-radius: 5px 5px 0 0;
+            &__img{
+              width: 89px;
+              height: 89px;
+              @include mtl(43px,31px);
+            }
+            .slider-info{
+              &__title {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #cc5858;
+                @include mtl(33px,28px);
+                letter-spacing: 0.2px;
+              }
+              &__paragraph{
+                @include mtl(9px,30px);
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #666666;
+                padding-right: 50px;
+                letter-spacing: 0.1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .benefits{
+    .container-custom{
+      h2{
+        margin-top: 100px;
+        margin-bottom: 58px;
+        padding-left: 37px;
+        text-align: center;
+      }
+      .benefits-list{
+        &__item_start {
+          img {
+            margin: 2px auto 0 auto;
+            display: block;
+          }
+          h3{
+            margin: 40px auto 0 auto;
+          }
+          p{
+            margin: -4px auto 0 auto;
+          }
+        }
+        &__item_middle {
+          img {
+            margin: 3px auto 0 auto;
+          }
+          h3{
+            margin: 38px auto 0 auto;
+          }
+          p{
+            margin: -4px auto 0 auto;
+          }
+        }
+        &__item_end {
+          img {
+            margin: 3px auto 0 auto;
+          }
+          h3{
+            margin: 39px auto 0 auto;
+          }
+          p{
+            margin: -4px auto 0 auto;
+          }
+        }
+      }
+    }
+  }
   .banner{
     .container{
       .cta-block{
@@ -117,6 +222,52 @@
       }
     }
   }
+  .new-features {
+    .container-custom {
+      .new-features__img {
+        margin: 0;
+        img {
+          display: block;
+          margin: 20px auto 0 auto;
+          height: 559px;
+          width: 393px;
+        }
+      }
+
+      .features-item {
+        &__info {
+          margin: 24px auto 0 auto;
+          padding: 0;
+          max-width: 500px;
+        }
+      }
+    }
+  }
+  .benefits{
+    .container-custom{
+      h2{
+        margin-top: 50px;
+        padding: 0;
+      }
+      .benefits-list{
+        &__item_start {
+          p{
+            margin: -4px auto 40px auto;
+          }
+        }
+        &__item_middle {
+          p{
+            margin: -4px auto 40px auto;
+          }
+        }
+        &__item_end {
+          p{
+            margin: -4px auto 40px auto;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 850px) {
@@ -196,4 +347,71 @@
     }
   }
 }
+@media (max-width: 550px) {
+  .new-features {
+    .container-custom {
+      .new-features__img {
+        img {
+          display: block;
+          margin: 20px auto 0 auto;
+          height: 559px;
+          width: 393px;
+        }
+      }
+      .features-item {
+        &__info {
+          margin: 24px auto 0 auto;
+          padding: 0;
+          max-width: 500px;
+          text-align: center;
+        }
+        &__slider-list{
+          width: 300px;
+          .slider-item {
+            flex-direction: column;
+            height: auto;
+            &__img{
+              display: block;
+              margin: 20px auto;
+            }
+            .slider-info{
+              &__title {
+                font-family: 'Montserrat', sans-serif;
+                margin: 0 auto;
+                text-align: center;
+              }
+              &__paragraph{
+                margin: 10px auto;
+                text-align: center;
+                padding: 0 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
+
+@media (max-width: 420px) {
+  .new-features {
+    .container-custom {
+      .features-item {
+        &__title {
+          font-family: 'Montserrat', sans-serif;
+          margin: 40px auto 0 auto;
+          font-size: 34px;
+          letter-spacing: 0;
+        }
+      }
+      .new-features__img {
+        img {
+          margin: auto auto 0 auto;
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
