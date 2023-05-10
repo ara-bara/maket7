@@ -16,7 +16,7 @@
       color: #666666;
       letter-spacing: 0.07px;
       max-width: 450px;
-      margin-bottom: 76px;
+      margin-bottom: 75px;
     }
   }
   .photos__list{
@@ -25,64 +25,75 @@
       width: 464px;
     }
     .image-second{
-      width: 519px;
+      width: 518px;
     }
     .image-third{
       width: 519px;
     }
     .image-fourth{
-      width: 501px;
+      width: 498px;
     }
     .image-container {
       position: relative;
       padding: 0;
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #151515;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+        &__menu {
+          font-size: 18px;
+          line-height: 27px;
+          font-weight: 400;
+          color: #c2c2c2;
+          position: absolute;
+          top: 55%;
+          left: 49.5%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          display: flex;
+          width: 450px;
+          p{
+            display: inline-block;
+          }
+          .likes{
+            position: absolute;
+            right: -3px;
+            top: -1px;
+            i{
+              color: #f06464;
+              display: inline-block;
+              width: 25px;
+              height: 31px;
+            }
+            span{
+              font-size: 24px;
+              line-height: 27px;
+              font-weight: 400;
+              color: #f06464;
+            }
+          }
+        }
+      }
+      &:hover{
+        img {
+          transform: translateY(-10.5%) scale(1, 0.936);
+          transition: .5s ease;
+        }
+        .overlay {
+          height: 88px;
+        }
+      }
+      img{
+        transition: .5s ease;
+        height: 519px;
+        width: 100%;
+      }
     }
   }
-  img{
-    height: 519px;
-    width: 100%;
-  }
 }
-
-.image-container:hover img {
-  transform: translateY(-10.7%) scale(1, 0.94);
-  transition: .5s ease;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #151515;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
-
-.image-container:hover .overlay {
-  height: 87px;
-}
-
-.text {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 400;
-  color: #c2c2c2;
-  position: absolute;
-  top: 50%;
-  left: 33%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  p{
-    display: inline-block;
-  }
-  button{
-    color: red;
-    &:hover{
-      color: red;
-    }
-  }
-}
-

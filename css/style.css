@@ -434,7 +434,7 @@ main {
   color: #666666;
   letter-spacing: 0.07px;
   max-width: 450px;
-  margin-bottom: 76px;
+  margin-bottom: 75px;
 }
 .photos .photos__list {
   display: flex;
@@ -443,29 +443,19 @@ main {
   width: 464px;
 }
 .photos .photos__list .image-second {
-  width: 519px;
+  width: 518px;
 }
 .photos .photos__list .image-third {
   width: 519px;
 }
 .photos .photos__list .image-fourth {
-  width: 501px;
+  width: 498px;
 }
 .photos .photos__list .image-container {
   position: relative;
   padding: 0;
 }
-.photos img {
-  height: 519px;
-  width: 100%;
-}
-
-.image-container:hover img {
-  transform: translateY(-10.7%) scale(1, 0.94);
-  transition: 0.5s ease;
-}
-
-.overlay {
+.photos .photos__list .image-container .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -476,32 +466,57 @@ main {
   height: 0;
   transition: 0.5s ease;
 }
-
-.image-container:hover .overlay {
-  height: 87px;
-}
-
-.text {
+.photos .photos__list .image-container .overlay__menu {
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
   color: #c2c2c2;
   position: absolute;
-  top: 50%;
-  left: 33%;
+  top: 55%;
+  left: 49.5%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  display: flex;
+  width: 450px;
 }
-.text p {
+.photos .photos__list .image-container .overlay__menu p {
   display: inline-block;
 }
-.text button {
-  color: red;
+.photos .photos__list .image-container .overlay__menu .likes {
+  position: absolute;
+  right: -3px;
+  top: -1px;
 }
-.text button:hover {
-  color: red;
+.photos .photos__list .image-container .overlay__menu .likes i {
+  color: #f06464;
+  display: inline-block;
+  width: 25px;
+  height: 31px;
+}
+.photos .photos__list .image-container .overlay__menu .likes span {
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #f06464;
+}
+.photos .photos__list .image-container:hover img {
+  transform: translateY(-10.5%) scale(1, 0.936);
+  transition: 0.5s ease;
+}
+.photos .photos__list .image-container:hover .overlay {
+  height: 88px;
+}
+.photos .photos__list .image-container img {
+  transition: 0.5s ease;
+  height: 519px;
+  width: 100%;
 }
 
+@media (max-width: 1860px) {
+  .photos .photos__list .image-container .overlay__menu {
+    width: 300px;
+  }
+}
 @media (max-width: 1800px) {
   .banner {
     background: #de5d5d url("../img/iphone.png") 50% 0 no-repeat;
@@ -512,10 +527,58 @@ main {
   .banner .container .cta-block .cta-block__buttons {
     margin: 77px auto 0 auto;
   }
+  .photos .photos__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .photos .photos__list .image-container {
+    width: 500px;
+    margin: 0 auto 50px auto;
+  }
+  .photos .photos__list .image-container .overlay__menu {
+    width: 300px;
+  }
 }
 @media (max-width: 1400px) {
   .share .container-custom .share-img {
     margin-left: 0;
+  }
+  .photos .photos__list .image-first {
+    width: 464px;
+  }
+  .photos .photos__list .image-second {
+    width: 518px;
+  }
+  .photos .photos__list .image-third {
+    width: 519px;
+  }
+  .photos .photos__list .image-fourth {
+    width: 498px;
+  }
+  .photos .photos__list .image-container .overlay {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+  }
+  .photos .photos__list .image-container .overlay__menu {
+    top: 55%;
+    left: 49.5%;
+    width: 450px;
+  }
+  .photos .photos__list .image-container .overlay__menu p {
+    display: inline-block;
+  }
+  .photos .photos__list .image-container .overlay__menu .likes {
+    right: -3px;
+    top: -1px;
+  }
+  .photos .photos__list .image-container img {
+    height: 519px;
+    width: 100%;
   }
 }
 @media (max-width: 1200px) {
