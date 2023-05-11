@@ -69,28 +69,31 @@
       }
       .image-container {
         .overlay {
-          bottom: 0;
-          left: 0;
-          right: 0;
-          overflow: hidden;
-          width: 100%;
-          height: 0;
           &__menu {
             top: 55%;
             left: 49.5%;
             width: 450px;
-            p{
-              display: inline-block;
-            }
-            .likes {
-              right: -3px;
-              top: -1px;
-            }
           }
         }
         img{
           height: 519px;
           width: 100%;
+        }
+      }
+    }
+  }
+  .photos{
+    .photos__list{
+      .image-container{
+        width: 500px;
+        margin: 0 auto 38px auto;
+        img{
+          width: 100%;
+        }
+        .overlay {
+          &__menu {
+            width: 300px;
+          }
         }
       }
     }
@@ -120,42 +123,6 @@
           margin: 24px auto 0 auto;
           padding-right: 30px;
           padding-left: 30px;
-        }
-        &__slider-list{
-          width: 470px;
-          margin: 0 auto;
-          .slider-item {
-            margin-top: 65px;
-            display: flex;
-            height: 189px;
-            background-color: #ffffff;
-            border-radius: 5px 5px 0 0;
-            &__img{
-              width: 89px;
-              height: 89px;
-              @include mtl(43px,31px);
-            }
-            .slider-info{
-              &__title {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 18px;
-                line-height: 24px;
-                font-weight: 400;
-                color: #cc5858;
-                @include mtl(33px,28px);
-                letter-spacing: 0.2px;
-              }
-              &__paragraph{
-                @include mtl(9px,30px);
-                font-size: 16px;
-                line-height: 24px;
-                font-weight: 400;
-                color: #666666;
-                padding-right: 50px;
-                letter-spacing: 0.1px;
-              }
-            }
-          }
         }
       }
     }
@@ -284,6 +251,22 @@
       }
     }
   }
+  .photos{
+    .photos__list{
+      .image-container{
+        margin-bottom: 26px;
+        width: 350px;
+        img{
+          height: 365px;
+        }
+        &:hover{
+          .overlay{
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -381,6 +364,33 @@
   }
 }
 
+@media (max-width: 700px) {
+  .photos{
+    .container-custom{
+      h2{
+        font-size: 30px;
+        line-height: 1.2;
+        @include mtl(25px,0);
+        text-align: center;
+      }
+      .photos-info{
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 0;
+        max-width: 450px;
+        margin: 20px auto 75px auto;
+      }
+    }
+    .photos__list{
+      display: flex;
+      .image-container{
+        margin: 0 auto 26px auto;
+      }
+    }
+  }
+}
+
+
 @media (max-width: 650px) {
   .share {
     .container-custom {
@@ -449,7 +459,6 @@
             }
             .slider-info{
               &__title {
-                font-family: 'Montserrat', sans-serif;
                 margin: 0 auto;
                 text-align: center;
               }
@@ -472,7 +481,6 @@
     .container-custom {
       .features-item {
         &__title {
-          font-family: 'Montserrat', sans-serif;
           margin: 40px auto 0 auto;
           font-size: 34px;
           letter-spacing: 0;
@@ -483,6 +491,43 @@
           margin: auto auto 0 auto;
           height: auto;
           width: 100%;
+        }
+      }
+    }
+  }
+  .photos{
+    .photos__list{
+      display: flex;
+      .image-container{
+        margin: 0 auto 26px auto;
+        .overlay{
+          &__menu {
+            top: 55%;
+            left: 49.5%;
+            .likes {
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 350px) {
+  .photos{
+    .photos__list{
+      display: flex;
+      .image-container{
+        margin: 0 auto 26px auto;
+        .overlay{
+          &__menu {
+            left: 50%;
+            .likes {
+              right: 0;
+            }
+          }
         }
       }
     }

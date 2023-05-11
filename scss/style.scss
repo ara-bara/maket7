@@ -11,7 +11,7 @@
 @font-face {
   font-family: 'Myriad Pro', sans-serif;
 }
-@import "mixin.scss";
+@import "_mixin.scss";
 
 body{
   height: 100%;
@@ -69,4 +69,5 @@ main{
 @import "_share.scss";
 @import "_new-features.scss";
 @import "_photos.scss";
+@import "_cta.scss";
 @import "_adaptive.scss";

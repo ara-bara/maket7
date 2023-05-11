@@ -84,25 +84,30 @@ function like(likeId){
         }
     }
 }
-/*
-$(document).ready(function(){
-    $('.photos__list').slick({
-        arrows:false,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        slidesToShow: 4
+
+
+
+$(document).ready(function() {
+    var slickExists = false;
+
+    function checkWidth() {
+        if ($(window).width() <= 700 && !slickExists) {
+            $('.photos__list').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true
+            });
+            slickExists = true;
+        } else if ($(window).width() > 700 && slickExists) {
+            $('.photos__list').slick('unslick');
+            slickExists = false;
+        }
+    }
+
+    checkWidth();
+
+    $(window).resize(function() {
+        checkWidth();
     });
 });
-
-
-
-$(document).ready(function(){
-    if ($(window).width() <= 1800) {
-        $('.photos__list').slick({
-            arrows: false,
-            speed: 300,
-            variableWidth: true
-        });
-    }
-});
-*/
