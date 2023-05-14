@@ -2,10 +2,11 @@
   background-color: #313131;
   .container-custom{
     .new-features__img{
-      margin-top: 57px;
+      margin-top: 54px;
       margin-left: 12px;
     }
     .features-item{
+      margin-left: 68px;
       ul{
         padding-left: 30px;
       }
@@ -23,7 +24,7 @@
       }
       &__title{
         font-family: 'Montserrat', sans-serif;
-        @include mtl(170px,69px);
+        @include mtl(167px,69px);
         font-size: 46px;
         letter-spacing: 1.6px;
         line-height: 1.2;

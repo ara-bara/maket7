@@ -1,6 +1,6 @@
-/*slider*/
+//banner slider
 $(document).ready(function(){
-    $('.slick-slider__list').slick({
+    $('.cta-block__buttons').slick({
         arrows:false,
         dots:true,
         autoplay: true,

@@ -3,7 +3,7 @@
   .container-custom{
     .share-img{
       margin-top: 72px;
-      margin-left: 80px;
+      margin-left: 47px;
       img{}
     }
     .share-item {
@@ -16,8 +16,8 @@
       }
       &__title{
         h3{
-          padding-top: 184px;
-          margin-left: 2px;
+          padding-top: 182px;
+          margin-left: 3px;
           font-family: 'Montserrat', sans-serif;
           font-size: 48px;
           line-height: 1.2;
@@ -26,8 +26,9 @@
         }
       }
       &__info{
-        @include ptl(10px,6px);
+        @include ptl(13px,5px);
         font-size: 18px;
+        letter-spacing: 0;
         line-height: 27px;
         font-weight: 400;
         color: #aeaeae;
@@ -36,7 +37,7 @@
         .slider-item{
           display: flex;
           &__img{
-            @include mtl(51px,6px);
+            @include mtl(52px,5px);
             width: 170px;
             height: 93px;
           }

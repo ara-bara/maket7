@@ -15,18 +15,7 @@
 @media (max-width: 1800px){
   .banner{
     background: #de5d5d url('../img/iphone.png') 50% 0 no-repeat;
-    .container{
-      .cta-block{
-        h2{
-          margin: 0 auto;
-        }
-        .cta-block__buttons{
-          margin: 77px auto 0 auto;
-        }
-      }
-    }
   }
-
   .photos{
     .photos__list{
       display: grid;
@@ -98,6 +87,13 @@
       }
     }
   }
+  .new-features{
+    .container-custom{
+      .features-item{
+        margin-left: 0;
+      }
+    }
+  }
 }
 
 @media (max-width: 1200px) {
@@ -129,6 +125,10 @@
   }
   .benefits{
     .container-custom{
+      .row{
+        margin-left: 0;
+        margin-right: 0;
+      }
       h2{
         margin-top: 100px;
         margin-bottom: 58px;
@@ -137,12 +137,13 @@
       }
       .benefits-list{
         &__item_start {
+          margin-left: 0;
           img {
             margin: 2px auto 0 auto;
             display: block;
           }
           h3{
-            margin: 40px auto 0 auto;
+            margin: 40px auto 20px auto;
           }
           p{
             margin: -4px auto 0 auto;
@@ -153,7 +154,7 @@
             margin: 3px auto 0 auto;
           }
           h3{
-            margin: 38px auto 0 auto;
+            margin: 38px auto 20px auto;
           }
           p{
             margin: -4px auto 0 auto;
@@ -164,7 +165,7 @@
             margin: 3px auto 0 auto;
           }
           h3{
-            margin: 39px auto 0 auto;
+            margin: 39px auto 20px auto;
           }
           p{
             margin: -4px auto 0 auto;
@@ -173,38 +174,37 @@
       }
     }
   }
+  .share{
+    background-color: #262626;
+    .container-custom{
+      .share-img{
+        img{
+         margin: 30px auto 0 auto;
+         display: block;
+        }
+       }
+      .share-item {
+        margin: 0 auto;
+        max-width: 550px;
+        &__title{
+          h3{
+            padding-top: 42px;
+          }
+        }
+      }
+    }
+  }
   .banner{
-    .container{
+    .container-custom{
       .cta-block{
         h2{
-          font-size: 75px;
-          font-weight: 400;
           letter-spacing: 0.5px;
+          text-align: center;
         }
-        .cta-block__buttons{
-          margin: 77px auto 0 auto;
-          &_first{
-            width: 230px;
-            height: 65px;
-            img{
-              padding: 4px 0 0 5px;
-            }
-            a{
-              @include ctabutton;
-              padding: 10px 0 0 12px;
-            }
-          }
-          &_second{
-            width: 230px;
-            height: 65px;
-            img{
-              padding:4px 0 0 5px;
-            }
-            a{
-              @include ctabutton;
-              padding: 10px 0 0 15px;
-            }
-          }
+        &__buttons{
+          margin: 0 auto;
+          @include ptl(65px,0);
+          max-width: 543px;
         }
       }
     }
@@ -218,16 +218,19 @@
           margin: 0 auto;
         }
       }
-      .cta-form__info{
-        margin: 40px auto 0 auto;
-        text-align: center;
-      }
-      .cta-form__source{
-        margin: 20px auto 0 auto;
-        text-align: center;
-      }
-      .cta-form__buttons {
-        margin: 42px auto 30px auto;
+      .cta-form{
+        margin-bottom: 20px;
+        &__info{
+          margin: 40px auto 0 auto;
+          text-align: center;
+        }
+        &__source{
+          margin: 20px auto 0 auto;
+          text-align: center;
+        }
+        &__buttons {
+          margin: 42px auto 30px auto;
+        }
       }
     }
   }
@@ -238,37 +241,12 @@
     max-width: 750px;
   }
   .banner{
-    .container{
+    .container-custom{
       .cta-block{
         h2{
-          font-size: 65px;
+          padding-left: 0;
+          font-size: 70px;
           letter-spacing: 0;
-        }
-        .cta-block__buttons{
-          margin: 77px auto 0 auto;
-          max-width: 500px;
-          &_first{
-            width: 230px;
-            height: 65px;
-            img{
-              padding: 4px 0 0 5px;
-            }
-            a{
-              @include ctabutton;
-              padding: 10px 0 0 12px;
-            }
-          }
-          &_second{
-            width: 230px;
-            height: 65px;
-            img{
-              padding:4px 0 0 5px;
-            }
-            a{
-              @include ctabutton;
-              padding: 10px 0 0 15px;
-            }
-          }
         }
       }
     }
@@ -292,16 +270,9 @@
 }
 
 @media (max-width: 991px) {
-  .share {
-    height: auto;
-    .container-custom {
-      .share-img {
-        margin-left: 25%;
-      }
-    }
-  }
-  .new-features {
-    .container-custom {
+  .new-features{
+    background-color: #313131;
+    .container-custom{
       .new-features__img {
         margin: 0;
         img {
@@ -311,17 +282,18 @@
           width: 393px;
         }
       }
-
-      .features-item {
-        &__info {
-          margin: 24px auto 0 auto;
-          padding: 0;
-          max-width: 500px;
+      .features-item{
+        &__info{
+          max-width: 550px;
+        }
+        &__slider-list{
+          margin: 0 auto;
         }
       }
     }
   }
   .benefits{
+    margin-bottom: 15px;
     .container-custom{
       h2{
         margin-top: 50px;
@@ -348,31 +320,30 @@
   }
 }
 
-@media (max-width: 850px) {
-  .share{
-    .container-custom{
-      .share-img{
-        margin-left: 20%;
-      }
-    }
-  }
-}
 
 @media (max-width: 768px) {
   .banner{
-    .container{
+    .container-custom{
       .cta-block{
         h2{
-          font-size: 45px;
+          font-size: 60px;
         }
-        .cta-block__buttons{
+        &__buttons{
           flex-direction: column;
-          &_first{
-            margin: 0 auto 20px auto;
+          .button-block{
+            display: flex;
+            flex-direction: column;
+            &__button_first{
+              margin: 0 auto 20px auto;
+            }
+            &__button_second{
+              margin: 0 auto;
+            }
           }
-          &_second{
-            margin: 0 auto;
-          }
+        }
+        .slick-dots {
+          border-radius: 0 0 5px 5px;
+          margin-top: 80px;
         }
       }
     }
@@ -393,18 +364,20 @@
           margin: 0 auto;
         }
       }
-      .cta-form__info{
-        margin: 40px auto 0 auto;
-        text-align: center;
-        font-size: 30px;
-        letter-spacing: 1px;
-      }
-      .cta-form__source{
-        margin: 20px auto 0 auto;
-        text-align: center;
-      }
-      .cta-form__buttons {
-        margin: 42px auto 30px auto;
+      .cta-form{
+        &__info{
+          margin: 40px auto 0 auto;
+          text-align: center;
+          font-size: 30px;
+          letter-spacing: 1px;
+        }
+        &__source{
+          margin: 20px auto 0 auto;
+          text-align: center;
+        }
+        &__buttons {
+          margin: 42px auto 30px auto;
+        }
       }
     }
   }
@@ -441,7 +414,7 @@
   .share {
     .container-custom {
       .share-img {
-        margin: 72px auto 0 auto;
+        margin: 20px auto 0 auto;
         img{
           width: 100%;
           height: auto;
@@ -454,6 +427,7 @@
         &__title{
           h3{
             text-align: center;
+            font-size: 35px;
           }
         }
         &__info{
@@ -492,9 +466,27 @@
       }
     }
   }
+  .banner{
+    .container-custom{
+      .cta-block{
+        h2{
+          font-size: 50px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 550px) {
+  .banner{
+    .container-custom{
+      .cta-block{
+        h2{
+          font-size: 32px;
+        }
+      }
+    }
+  }
   .new-features {
     .container-custom {
       .new-features__img {

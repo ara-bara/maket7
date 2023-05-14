@@ -1,60 +1,62 @@
 .cta{
-  height: 723px;
   background-color: #de5d5d;
   .container-custom{
     &__image{
-      @include mtl(224px,66px);
+      @include mtl(225px,134px);
       img{
         width: 246px;
         height: 246px;
       }
     }
-    .cta-form__info{
-      @include mtl(176px,112px);
-      font-family: 'Montserrat', sans-serif;
-      font-size: 44px;
-      line-height: 1;
-      letter-spacing: 2.25px;
-      font-weight: 600;
-      color: #ffffff;
-      &_second{
-        @include mtl(4px,2px);
+    .cta-form{
+      margin-bottom: 219px;
+      &__info{
+        @include mtl(174px,112px);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 44px;
+        line-height: 1;
+        letter-spacing: 2.25px;
+        font-weight: 600;
+        color: #ffffff;
+        &_second{
+          @include mtl(4px,2px);
+        }
+        &_third{
+          letter-spacing: 1.98px;
+        }
       }
-      &_third{
-        letter-spacing: 1.98px;
+      &__source{
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #ffffff;
+        @include mtl(25px,112px);
       }
-    }
-    .cta-form__source{
-      font-size: 24px;
-      line-height: 1.2;
-      font-weight: 400;
-      color: #ffffff;
-      @include mtl(20px,112px);
-    }
-    .cta-form__buttons {
-      margin: 42px 0 0 14.6%;
-      display: flex;
-      justify-content: space-between;
-      max-width: 543px;
-      &_first {
-        @include bb;
-          img {
-            padding: 10px 0 0 19px;
+      &__buttons {
+        margin: 40px 0 0 16.7%;
+        display: flex;
+        justify-content: space-between;
+        max-width: 543px;
+        &_first {
+          @include bb;
+            img {
+              padding: 10px 0 0 19px;
+            }
+          .button__text{
+            @include ctabutton;
+            padding: 16px 0 0 12px;
           }
-        .button__text{
-          @include ctabutton;
-          padding: 16px 0 0 12px;
         }
-      }
 
-      &_second {
-        @include bb;
-        img {
-          padding: 14px 0 0 27px;
-        }
-        .button__text{
-          @include ctabutton;
-          padding: 16px 0 0 15px;
+        &_second {
+          @include bb;
+          img {
+            padding: 14px 0 0 27px;
+          }
+          .button__text{
+            @include ctabutton;
+            padding: 16px 0 0 15px;
+          }
         }
       }
     }

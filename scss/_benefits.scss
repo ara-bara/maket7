@@ -1,16 +1,15 @@
 .benefits{
-  height: 593px;
+  margin-bottom: 113px;
   .container-custom{
     h2{
       margin-top: 100px;
       margin-bottom: 58px;
-      padding-right: 37px;
+      padding-left: 20px;
       font-family: 'Montserrat', sans-serif;
       font-size: 48px;
       line-height: 1.2;
       font-weight: 600;
       color: #3a3a3a;
-      text-align: center;
     }
     .benefits-list{
       &__item{
@@ -33,6 +32,7 @@
         }
       }
       &__item_start {
+        margin-left: 68px;
         img {
           margin: 2px 0 0 51px;
         }
@@ -62,17 +62,18 @@
       }
       &__item_end {
         img {
-          margin: 3px 0 0 57px;
+          margin: 3px 0 0 56px;
         }
         h3{
           margin-top: 39px;
-          margin-left: 66px;
+          margin-left: 67px;
         }
         p{
-          margin: -4px 0 0 48px;
+          margin: -4px 0 0 47px;
           line-height: 23.5px;
         }
       }
+      margin-bottom: 11px;
     }
   }
 }

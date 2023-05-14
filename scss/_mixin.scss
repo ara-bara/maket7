@@ -30,3 +30,9 @@ $s :11px;
   padding-top: $size;
   padding-left: $s;
 }
+
+/*padding top and left*/
+@mixin ptl($size,$s){
+  padding-top: $size;
+  padding-left: $s;
+}

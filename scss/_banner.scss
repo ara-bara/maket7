@@ -1,45 +1,57 @@
 .banner{
   margin-top: 98px;
-  height: 689px;
   background: #de5d5d url('../img/iphone.png') 230px 0 no-repeat;
   .container-custom{
     .cta-block{
       margin: 0 auto;
       h2{
         font-family: 'Montserrat', sans-serif;
-        padding-top: 196px;
-        margin-left: 163px;
+        @include ptl(193px,14px);
         color: #ffffff;
         font-size: 90px;
         font-weight: 600;
         font-style: normal;
         letter-spacing: 0;
         line-height: normal;
-        text-align: center;
       }
       &__buttons{
-        margin: 70px 0 0 33.4%;
+        @include ptl(65px,68px);
         display: flex;
-        justify-content: space-between;
-        max-width: 543px;
-        &_first{
-          @include bb;
-          img{
-            padding: 7px 0 0 20px;
+        flex-direction: column;
+        max-width: 611px;
+        .button-block{
+          display: flex;
+          justify-content: space-between;
+          &__button_first{
+            @include bb;
+            img{
+              padding: 7px 0 0 20px;
+            }
+            .button__text{
+              @include ctabutton;
+              padding: 15px 0 0 12px;
+            }
           }
-          a{
-            @include ctabutton;
-            padding: 15px 0 0 12px;
+          &__button_second{
+            @include bb;
+            img{
+              padding:11px 0 0 27px;
+            }
+            .button__text{
+              @include ctabutton;
+              padding: 15px 0 0 15px;
+            }
           }
         }
-        &_second{
-          @include bb;
-          img{
-            padding:11px 0 0 27px;
-          }
-          a{
-            @include ctabutton;
-            padding: 15px 0 0 15px;
+      }
+      .slick-dots {
+        border-radius: 0 0 5px 5px;
+        margin: 137px 0 16px 39.8%;
+        li {
+          margin: 31px 4px;
+          button{
+            height: 12px;
+            width: 12px;
           }
         }
       }
