@@ -29,12 +29,12 @@ $(document).ready(function(){
     });
 });
 //burger menu
-/*
+
 $(document).ready(function(){
     $('.navbar-toggler').click(function(){
         $('.navbar-collapse').toggleClass('show');
     });
-});*/
+});
 
 let likeCounter1 = 13; // Початкове значення лічильника
 let likeCounterElem1 = document.getElementById("like-counter1");

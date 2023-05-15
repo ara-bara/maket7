@@ -1,17 +1,46 @@
-/*.navbar {
+.navbar {
   height: 98px;
+  width: 100%;
+  background-color: #de5d5d;
+  position: fixed;
+  z-index: 1000;
+  .show{
+    position: absolute;
+    background: #de5d5d;
+    width: 100%;
+    top: 98px;
+    left: 0;
+    text-align: center;
+    padding: 0;
+  }
+  &-collapse{
+    @include ptl(10px,275px);
+    .nav-link {
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #ffffff;
+      margin-right: 29px;
+      &:hover{
+        border-top: 5px solid #ffffff;
+      }
+    }
+    .features{
+      margin-right: 4px;
+    }
+    .download{
+      margin-right: -6px;
+    }
+  }
   &-brand {
   color: white;
   height: 96px;
   font-size: 60px;
-  line-height: 102px;
   font-weight: 700;
   font-family: 'Myriad Pro', sans-serif;
+    @include ptl(38px,404px);
+  }
+  span{
+    color: white;
+  }
 }
-.nav-link {
-  color: white;
-}
-.container{
-  margin-left: 22%;
-}
-}*/

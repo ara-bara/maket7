@@ -1,0 +1,46 @@
+.compatibility{
+  background-color: #e7e7e7;
+  padding: 89px 0 120px 0;
+  .container-custom{
+    .title{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 600;
+      color: #666666;
+      border-bottom: 2px solid #cbcbcb;
+      max-width: 970px;
+      @include mtl(0,80px);
+
+      padding-bottom: 18px;
+    }
+    .operating-systems{
+      @include mtl(35px,69px);
+      .ios{
+        &__title{
+          @include opt;
+        }
+        &__info{
+          margin-top: 2px;
+          @include opi;
+        }
+        &__devices{
+          @include mtl(25px,1px);
+        }
+      }
+      .android{
+        margin-left: 39px;
+        &__title{
+          @include opt;
+        }
+        &__info{
+          margin-top: 2px;
+          @include opi;
+        }
+        &__devices{
+          @include mtl(33px,1px);
+        }
+      }
+    }
+  }
+}

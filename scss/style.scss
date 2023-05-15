@@ -63,6 +63,7 @@ main{
   background-color: #ffffff;
   opacity: 1;
 }
+
 @import "_header.scss";
 @import "_banner.scss";
 @import "_benefits.scss";
@@ -70,4 +71,6 @@ main{
 @import "_new-features.scss";
 @import "_photos.scss";
 @import "_cta.scss";
+@import "_compatibility";
+@import "_footer";
 @import "_adaptive.scss";
