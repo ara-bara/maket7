@@ -1,6 +1,6 @@
 .compatibility{
   background-color: #e7e7e7;
-  padding: 89px 0 120px 0;
+  padding: 85px 0 120px 0;
   .container-custom{
     .title{
       font-family: 'Montserrat', sans-serif;
@@ -10,9 +10,8 @@
       color: #666666;
       border-bottom: 2px solid #cbcbcb;
       max-width: 970px;
-      @include mtl(0,80px);
-
-      padding-bottom: 18px;
+      @include mtl(0,12.65%);
+      padding-bottom: 22px;
     }
     .operating-systems{
       @include mtl(35px,69px);

@@ -34,16 +34,15 @@
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1440px) {
   .navbar {
-    &-collapse {
-      @include ptl(10px, 275px);
+    &-collapse{
+      @include ptl(0.3%,20%);
     }
     &-brand {
-      @include ptl(38px,404px);
+      @include ptl(27px,1%);
     }
   }
-
 }
 
 @media (max-width: 1400px){
@@ -86,7 +85,7 @@
   .photos{
     .photos__list{
       .image-container{
-        width: 500px;
+        width: 490px;
         margin: 0 auto 38px auto;
         img{
           width: 100%;
@@ -114,6 +113,7 @@
   }
   .navbar {
     &-collapse {
+      @include ptl(0.3%,16%);
       .nav-link {
         margin-right: 10px;
       }
@@ -306,16 +306,6 @@
   .container {
     max-width: 750px;
   }
-  .navbar {
-    &-collapse{
-      @include ptl(10px,120px);
-      .nav-link {
-        max-width: 130px;
-        margin: 0 auto;
-      }
-    }
-  }
-
   .banner{
     .container-custom{
       .cta-block{
@@ -380,6 +370,17 @@
         &__slider-list{
           margin: 0 auto;
         }
+      }
+    }
+  }
+  .navbar {
+    &-toggler{
+      margin-right: 20px;
+    }
+    &-collapse{
+      .nav-link {
+        max-width: 130px;
+        margin: 0 auto;
       }
     }
   }

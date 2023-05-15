@@ -6,7 +6,7 @@
       margin: 0 auto;
       h2{
         font-family: 'Montserrat', sans-serif;
-        @include ptl(193px,14px);
+        @include ptl(16.58%,1.2%);
         color: #ffffff;
         font-size: 90px;
         font-weight: 600;
@@ -15,7 +15,7 @@
         line-height: normal;
       }
       &__buttons{
-        @include ptl(65px,68px);
+        @include ptl(5.51%,5.8%);
         display: flex;
         flex-direction: column;
         max-width: 611px;

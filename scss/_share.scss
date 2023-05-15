@@ -3,8 +3,7 @@
   .container-custom{
     .share-img{
       margin-top: 72px;
-      margin-left: 47px;
-      img{}
+      margin-left: 3.89%;
     }
     .share-item {
       padding-left: 11px;
@@ -26,7 +25,7 @@
         }
       }
       &__info{
-        @include ptl(13px,5px);
+        @include ptl(13px,6px);
         font-size: 18px;
         letter-spacing: 0;
         line-height: 27px;
@@ -37,7 +36,7 @@
         .slider-item{
           display: flex;
           &__img{
-            @include mtl(52px,5px);
+            @include mtl(51px,7px);
             width: 170px;
             height: 93px;
           }

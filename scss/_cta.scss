@@ -2,7 +2,7 @@
   background-color: #de5d5d;
   .container-custom{
     &__image{
-      @include mtl(225px,134px);
+      @include mtl(224px,11.45%);
       img{
         width: 246px;
         height: 246px;
@@ -11,7 +11,7 @@
     .cta-form{
       margin-bottom: 219px;
       &__info{
-        @include mtl(174px,112px);
+        @include mtl(174px,17.1%);
         font-family: 'Montserrat', sans-serif;
         font-size: 44px;
         line-height: 1;
@@ -30,10 +30,10 @@
         line-height: 1.2;
         font-weight: 400;
         color: #ffffff;
-        @include mtl(25px,112px);
+        @include mtl(23px,16.9%);
       }
       &__buttons {
-        margin: 40px 0 0 16.7%;
+        margin: 41px 0 0 16.7%;
         display: flex;
         justify-content: space-between;
         max-width: 543px;

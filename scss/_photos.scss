@@ -6,17 +6,17 @@
       line-height: 1.2;
       font-weight: 600;
       color: #f06464;
-      @include mtl(70px,144px);
+      @include mtl(69px,12.3%);
     }
     .photos-info{
-      @include mtl(20px,148px);
+      @include mtl(18px,12.6%);
       font-size: 18px;
       line-height: 27px;
       font-weight: 400;
       color: #666666;
       letter-spacing: 0.07px;
       max-width: 450px;
-      margin-bottom: 75px;
+      margin-bottom: 78px;
     }
   }
   .photos__list{

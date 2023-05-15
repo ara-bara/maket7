@@ -14,7 +14,7 @@
     padding: 0;
   }
   &-collapse{
-    @include ptl(10px,275px);
+    @include ptl(0.3%,14.55%);
     .nav-link {
       font-size: 18px;
       line-height: 1.2;
@@ -38,7 +38,7 @@
   font-size: 60px;
   font-weight: 700;
   font-family: 'Myriad Pro', sans-serif;
-    @include ptl(38px,404px);
+    @include ptl(1.6%,21.3%);
   }
   span{
     color: white;
