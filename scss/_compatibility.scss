@@ -14,8 +14,9 @@
       padding-bottom: 22px;
     }
     .operating-systems{
-      @include mtl(35px,69px);
+      @include mtl(32px,11.65%);
       .ios{
+        padding-right: 0;
         &__title{
           @include opt;
         }
@@ -24,11 +25,11 @@
           @include opi;
         }
         &__devices{
-          @include mtl(25px,1px);
+          @include mtl(27px,1px);
         }
       }
       .android{
-        margin-left: 39px;
+        margin-left: 6.5%;
         &__title{
           @include opt;
         }

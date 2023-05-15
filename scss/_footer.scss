@@ -7,11 +7,11 @@ footer{
     line-height: 1.2;
     font-weight: 600;
     color: #666666;
-    @include ptl(94px,72px);
+    @include ptl(94px,5.4%);
     letter-spacing: 0.08px;
   }
   .registration-form{
-    @include ptl(60px,104px);
+    @include ptl(60px,9.2%);
     form{
       display: flex;
       flex-direction: column;

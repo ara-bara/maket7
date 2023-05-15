@@ -714,8 +714,11 @@ main {
   padding-bottom: 22px;
 }
 .compatibility .container-custom .operating-systems {
-  margin-top: 35px;
-  margin-left: 69px;
+  margin-top: 32px;
+  margin-left: 11.65%;
+}
+.compatibility .container-custom .operating-systems .ios {
+  padding-right: 0;
 }
 .compatibility .container-custom .operating-systems .ios__title {
   font-family: "Montserrat", sans-serif;
@@ -731,11 +734,11 @@ main {
   letter-spacing: 0.044px;
 }
 .compatibility .container-custom .operating-systems .ios__devices {
-  margin-top: 25px;
+  margin-top: 27px;
   margin-left: 1px;
 }
 .compatibility .container-custom .operating-systems .android {
-  margin-left: 39px;
+  margin-left: 6.5%;
 }
 .compatibility .container-custom .operating-systems .android__title {
   font-family: "Montserrat", sans-serif;
@@ -766,12 +769,12 @@ footer .copyright {
   font-weight: 600;
   color: #666666;
   padding-top: 94px;
-  padding-left: 72px;
+  padding-left: 5.4%;
   letter-spacing: 0.08px;
 }
 footer .registration-form {
   padding-top: 60px;
-  padding-left: 104px;
+  padding-left: 9.2%;
 }
 footer .registration-form form {
   display: -webkit-box;
