@@ -13,9 +13,15 @@
 }
 
 @media (max-width: 1800px){
-  .banner{
-    background: #de5d5d url('../img/iphone.png') 50% 0 no-repeat;
+  //banner photo centering
+  .banner {
+    &__list {
+      .cta-block {
+        background: #de5d5d url('../img/iphone.png') 50% 0 no-repeat;
+      }
+    }
   }
+  //photos in 2 rows
   .photos{
     .photos__list{
       display: grid;
@@ -82,6 +88,7 @@
       }
     }
   }
+  //centering photo
   .photos{
     .photos__list{
       .image-container{
@@ -154,6 +161,7 @@
         margin-left: 0;
         margin-right: 0;
       }
+      //centering title
       h2{
         margin-top: 100px;
         margin-bottom: 58px;
@@ -163,35 +171,44 @@
       .benefits-list{
         &__item_start {
           margin-left: 0;
+          //centering photo
           img {
             margin: 2px auto 0 auto;
             display: block;
           }
+          //centering title
           h3{
             margin: 40px auto 20px auto;
           }
+          //centering paragraph
           p{
             margin: -4px auto 0 auto;
           }
         }
         &__item_middle {
+          //centering photo
           img {
             margin: 3px auto 0 auto;
           }
+          //centering title
           h3{
             margin: 38px auto 20px auto;
           }
+          //centering paragraph
           p{
             margin: -4px auto 0 auto;
           }
         }
         &__item_end {
+          //centering photo
           img {
             margin: 3px auto 0 auto;
           }
+          //centering title
           h3{
             margin: 39px auto 20px auto;
           }
+          //centering paragraph
           p{
             margin: -4px auto 0 auto;
           }
@@ -203,12 +220,14 @@
     background-color: #262626;
     .container-custom{
       .share-img{
+        //centering photo
         img{
          margin: 30px auto 0 auto;
          display: block;
         }
        }
       .share-item {
+        //centering item
         margin: 0 auto;
         max-width: 550px;
         &__title{
@@ -220,22 +239,27 @@
     }
   }
   .banner{
-    .container-custom{
+    &__list{
       .cta-block{
         h2{
           letter-spacing: 0.5px;
           text-align: center;
         }
         &__buttons{
+          //centering button
           margin: 0 auto;
           @include ptl(65px,0);
           max-width: 543px;
         }
       }
     }
+    .slider-dots {
+      left: 44%;
+    }
   }
   .cta{
     .container-custom{
+      //centering photo
       &__image{
         margin: 40px auto 0 auto;
         img{
@@ -245,14 +269,17 @@
       }
       .cta-form{
         margin-bottom: 20px;
+        //centering text
         &__info{
           margin: 40px auto 0 auto;
           text-align: center;
         }
+        //centering source
         &__source{
           margin: 20px auto 0 auto;
           text-align: center;
         }
+        //centering button
         &__buttons {
           margin: 42px auto 30px auto;
         }
@@ -261,11 +288,13 @@
   }
   .compatibility{
     .container-custom{
+      //centering title
       .title{
         margin: 89px auto 0 auto;
         text-align: center;
         max-width: 80%;
       }
+      //centering block
       .operating-systems{
         margin: 35px auto 0 auto;
         .ios{
@@ -280,10 +309,12 @@
     }
   }
   footer{
+    //centering copyright
     .copyright{
       @include ptl(94px,0);
       text-align: center;
     }
+    //centering registration form
     .registration-form{
       @include ptl(60px,0);
       margin: 0 auto;
@@ -307,7 +338,7 @@
     max-width: 750px;
   }
   .banner{
-    .container-custom{
+    &__list{
       .cta-block{
         h2{
           padding-left: 0;
@@ -335,12 +366,15 @@
   }
   .compatibility{
     .container-custom{
+      //centering compatibility blocks
       .operating-systems{
         margin: 35px auto 0 auto;
+        //centering ios block
         .ios{
           max-width: 450px;
           margin: 20px auto;
         }
+        //centering android block
         .android{
           max-width: 450px;
           margin: 20px auto;
@@ -356,6 +390,7 @@
     .container-custom{
       .new-features__img {
         margin: 0;
+        //centering photo
         img {
           display: block;
           margin: 20px auto 0 auto;
@@ -367,6 +402,7 @@
         &__info{
           max-width: 550px;
         }
+        //centering slider
         &__slider-list{
           margin: 0 auto;
         }
@@ -378,6 +414,7 @@
       margin-right: 20px;
     }
     &-collapse{
+      //centering link in header menu
       .nav-link {
         max-width: 130px;
         margin: 0 auto;
@@ -414,7 +451,7 @@
 
 @media (max-width: 768px) {
   .banner{
-    .container-custom{
+    &__list{
       .cta-block{
         h2{
           font-size: 60px;
@@ -424,23 +461,22 @@
           .button-block{
             display: flex;
             flex-direction: column;
+            //centering button
             &__button_first{
               margin: 0 auto 20px auto;
             }
+            //centering button
             &__button_second{
               margin: 0 auto;
             }
           }
-        }
-        .slick-dots {
-          border-radius: 0 0 5px 5px;
-          margin-top: 80px;
         }
       }
     }
   }
   .share{
     .container-custom{
+      //centering share image
       .share-img{
         margin: 72px auto 0 auto;
       }
@@ -448,6 +484,7 @@
   }
   .cta{
     .container-custom{
+      //centering cta image
       &__image{
         margin: 40px auto 0 auto;
         img{
@@ -456,12 +493,14 @@
         }
       }
       .cta-form{
+        //text centering + small size
         &__info{
           margin: 40px auto 0 auto;
           text-align: center;
           font-size: 30px;
           letter-spacing: 1px;
         }
+        //centering source
         &__source{
           margin: 20px auto 0 auto;
           text-align: center;
@@ -476,24 +515,30 @@
     .container-custom{
       .operating-systems{
         .ios{
+          //centering title
           &__title{
             text-align: center;
           }
+          //centering text
           &__info{
             text-align: center;
           }
+          //centering image
           &__devices{
             display: block;
             margin: 20px auto;
           }
         }
         .android{
+          //centering title
           &__title{
             text-align: center;
           }
+          //centering text
           &__info{
             text-align: center;
           }
+          //centering image
           &__devices{
             display: block;
             margin: 20px auto;
@@ -519,12 +564,14 @@
 @media (max-width: 700px) {
   .photos{
     .container-custom{
+      //title centering + small size
       h2{
         font-size: 30px;
         line-height: 1.2;
         @include mtl(25px,0);
         text-align: center;
       }
+      //text centering + small size
       .photos-info{
         text-align: center;
         font-size: 16px;
@@ -535,6 +582,7 @@
     }
     .photos__list{
       display: flex;
+      //centering image
       .image-container{
         margin: 0 auto 26px auto;
       }
@@ -546,8 +594,10 @@
 @media (max-width: 650px) {
   .share {
     .container-custom {
+      //centering image
       .share-img {
         margin: 20px auto 0 auto;
+        //adaptive for image
         img{
           width: 100%;
           height: auto;
@@ -557,23 +607,28 @@
         .slick-dots {
           justify-content: center;
         }
+        //centering title
         &__title{
           h3{
             text-align: center;
             font-size: 35px;
           }
         }
+        //centering text
         &__info{
           text-align: center;
         }
         &__slider-list{
+          //slider in 1 column
           .slider-item{
             display: flex;
            flex-direction: column;
+            //centering image
             &__img{
               display: block;
               margin: 30px auto 0 auto;
             }
+            //centering paragraph
             &__paragraph{
               text-align: center;
             }
@@ -600,19 +655,22 @@
     }
   }
   .banner{
-    .container-custom{
+    &__list{
       .cta-block{
         h2{
           font-size: 50px;
         }
       }
     }
+    .slider-dots{
+      left: 39%;
+    }
   }
 }
 
 @media (max-width: 550px) {
   .banner{
-    .container-custom{
+    &__list{
       .cta-block{
         h2{
           font-size: 32px;
@@ -631,6 +689,7 @@
         }
       }
       .features-item {
+        //centering text
         &__info {
           margin: 24px auto 0 auto;
           padding: 0;
@@ -671,11 +730,18 @@
         .email-form{
           display: flex;
           flex-direction: column;
+          //centering button
           button {
             margin: 20px auto 0 auto;
           }
         }
       }
+    }
+  }
+  .banner{
+    //banner dots centering
+    .slider-dots{
+      left: 36%;
     }
   }
 }
@@ -684,6 +750,7 @@
   .new-features {
     .container-custom {
       .features-item {
+        //title centering + small size
         &__title {
           margin: 40px auto 0 auto;
           font-size: 34px;
@@ -723,10 +790,10 @@
     .container-custom{
       .operating-systems{
         .android{
+          //adaptive for image
           img{
             height: auto;
             width: 90%;
-
           }
         }
       }
@@ -742,6 +809,7 @@
       .image-container{
         margin: 0 auto 26px auto;
         .overlay{
+          // overlay menu centering
           &__menu {
             left: 50%;
             .likes {

@@ -1,12 +1,27 @@
 //banner slider
-$(document).ready(function(){
-    $('.cta-block__buttons').slick({
-        arrows:false,
-        dots:true,
+$(document).ready(function() {
+    $('.banner__list').slick({
+        arrows: false,
+        dots: false,
         autoplay: true,
         autoplaySpeed: 4000
     });
+
+    $('.slider-dots').on('click', '.dot', function() {
+        var dotIndex = $(this).index();
+        $('.banner__list').slick('slickGoTo', dotIndex);
+    });
+
+    $('.banner__list').on('afterChange', function(event, slick, currentSlide) {
+        // Знімаємо клас 'active' з усіх крапок
+        $('.slider-dots .dot').removeClass('dot--active');
+
+        // Додаємо клас 'active' до поточної крапки
+        $('.slider-dots .dot').eq(currentSlide).addClass('dot--active');
+    });
 });
+
+
 
 //share
 $(document).ready(function(){

@@ -1,55 +1,73 @@
 .cta{
-  background-color: #de5d5d;
+  background-color: $red;
   .container-custom{
+    // styles for image
     &__image{
+      //margin top and left
       @include mtl(224px,11.45%);
       img{
         width: 246px;
         height: 246px;
       }
     }
+    //block cta
     .cta-form{
       margin-bottom: 219px;
+      //info about cta
       &__info{
+        //margin top and left
         @include mtl(174px,17.1%);
         font-family: 'Montserrat', sans-serif;
         font-size: 44px;
         line-height: 1;
         letter-spacing: 2.25px;
         font-weight: 600;
-        color: #ffffff;
+        color: $white;
+        //styles for second paragraph
         &_second{
           @include mtl(4px,2px);
         }
+        //styles for third paragraph
         &_third{
           letter-spacing: 1.98px;
         }
       }
+      //styles for source of info
       &__source{
         font-size: 24px;
         line-height: 1.2;
         font-weight: 400;
-        color: #ffffff;
+        color: $white;;
         @include mtl(23px,16.9%);
       }
+      //list of buttons
       &__buttons {
         margin: 41px 0 0 16.7%;
         display: flex;
         justify-content: space-between;
         max-width: 543px;
+        //first button
         &_first {
           @include bb;
-            img {
-              padding: 10px 0 0 19px;
-            }
+          transition: transform 0.3s ease;
+          &:hover{
+            transform: scale(1.05);
+          }
+          img {
+            padding: 10px 0 0 19px;
+          }
           .button__text{
             @include ctabutton;
             padding: 16px 0 0 12px;
           }
         }
-
+        //second button
         &_second {
           @include bb;
+          transition: transform 0.3s ease;
+          &:hover{
+            transform: scale(1.05);
+          }
           img {
             padding: 14px 0 0 27px;
           }

@@ -1,5 +1,5 @@
 .compatibility{
-  background-color: #e7e7e7;
+  background-color: $gray;
   padding: 85px 0 120px 0;
   .container-custom{
     .title{
@@ -7,14 +7,16 @@
       font-size: 24px;
       line-height: 1.2;
       font-weight: 600;
-      color: #666666;
-      border-bottom: 2px solid #cbcbcb;
+      color: $light-gray;
+      border-bottom: 2px solid $gray;
       max-width: 970px;
       @include mtl(0,12.65%);
       padding-bottom: 22px;
     }
+    //list of items
     .operating-systems{
       @include mtl(32px,11.65%);
+      // block ios
       .ios{
         padding-right: 0;
         &__title{
@@ -24,10 +26,12 @@
           margin-top: 2px;
           @include opi;
         }
+        //margin top and left for image
         &__devices{
           @include mtl(27px,1px);
         }
       }
+      //block android
       .android{
         margin-left: 6.5%;
         &__title{
@@ -37,6 +41,7 @@
           margin-top: 2px;
           @include opi;
         }
+        //margin top and left for image
         &__devices{
           @include mtl(33px,1px);
         }

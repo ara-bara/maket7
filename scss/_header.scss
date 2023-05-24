@@ -1,28 +1,37 @@
+// header menu
 .navbar {
   height: 98px;
   width: 100%;
-  background-color: #de5d5d;
+  background-color: $red;
   position: fixed;
   z-index: 1000;
+  // class that shows the menu when we have less that 998 px
   .show{
     position: absolute;
-    background: #de5d5d;
+    background: $red;
     width: 100%;
     top: 98px;
     left: 0;
     text-align: center;
     padding: 0;
   }
+  //styles for list of links
   &-collapse{
+    // padding top and left
     @include ptl(0.3%,14.55%);
+    //styles for link
     .nav-link {
       font-size: 18px;
       line-height: 1.2;
       font-weight: 400;
-      color: #ffffff;
+      color: $white;
       margin-right: 29px;
+      // hover effect
       &:hover{
-        border-top: 5px solid #ffffff;
+        border-top: 5px solid $white;
+        // makes item not jump when hovering
+        margin-bottom: 0;
+        padding-bottom: 0;
       }
     }
     .features{
@@ -32,15 +41,17 @@
       margin-right: -6px;
     }
   }
+  //logo
   &-brand {
-  color: white;
+  color: $white;
   height: 96px;
   font-size: 60px;
   font-weight: 700;
   font-family: 'Myriad Pro', sans-serif;
+    // padding top and left
     @include ptl(1.6%,21.3%);
   }
   span{
-    color: white;
+    color: $white;
   }
 }

@@ -1,6 +1,7 @@
 .benefits{
   margin-bottom: 113px;
   .container-custom{
+    //title
     h2{
       margin-top: 100px;
       margin-bottom: 58px;
@@ -11,69 +12,81 @@
       font-weight: 600;
       color: #3a3a3a;
     }
+    //list of items
     .benefits-list{
+      //basic style for items
       &__item{
         img{
           width: 229px;
           height: 229px;
           display: block;
         }
+        //sub title
         h3{
           font-family: 'Montserrat', sans-serif;
           text-align: center;
           font-size: 18px;
           font-weight: 600;
-          color: #666666;
+          color: $light-gray;
         }
+        //text
         p{
           text-align: center;
           width: 250px;
           font-size: 16px;
         }
       }
+      // first item
       &__item_start {
         margin-left: 5.78%;
         img {
           margin: 2px 0 0 51px;
         }
+        //sub title
         h3{
           margin-top: 40px;
           margin-left: 42px;
         }
+        //text
         p{
           margin: -4px 0 0 34px;
           line-height: 23.5px;
         }
       }
+      //second item
       &__item_middle {
         img {
           width: 231px;
           height: 230px;
           margin: 3px 0 0 54px;
         }
+        //sub title
         h3{
           margin-top: 38px;
           margin-left: 64px;
         }
+        //text
         p{
           margin: -4px 0 0 44px;
           line-height: 23.5px;
         }
       }
+      // third item
       &__item_end {
         img {
           margin: 3px 0 0 56px;
         }
+        //sub title
         h3{
           margin-top: 39px;
           margin-left: 67px;
         }
+        //text
         p{
           margin: -4px 0 0 47px;
           line-height: 23.5px;
         }
       }
-      margin-bottom: 11px;
     }
   }
 }

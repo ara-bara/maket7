@@ -1,12 +1,17 @@
 .banner{
   margin-top: 98px;
-  background: #de5d5d url('../img/iphone.png') 230px 0 no-repeat;
-  .container-custom{
-    .cta-block{
-      margin: 0 auto;
-      h2{
+  position: relative;
+  // list of sliders
+  &__list{
+    // styles for slider
+    .cta-block {
+      background: #de5d5d url('../img/iphone.png') 230px 0 no-repeat;
+      width: 100%;
+      height: 689px;
+      // title
+      h2 {
         font-family: 'Montserrat', sans-serif;
-        @include ptl(16.58%,1.2%);
+        @include ptl(16.58%, 1.2%);
         color: #ffffff;
         font-size: 90px;
         font-weight: 600;
@@ -14,46 +19,71 @@
         letter-spacing: 0;
         line-height: normal;
       }
-      &__buttons{
-        @include ptl(5.51%,5.8%);
+      // list of buttons
+      &__buttons {
+        @include ptl(5.51%, 5.8%);
         display: flex;
         flex-direction: column;
         max-width: 611px;
-        .button-block{
+        .button-block {
           display: flex;
           justify-content: space-between;
-          &__button_first{
+          //styles for first button
+          &__button_first {
             @include bb;
-            img{
+            transition: transform 0.3s ease;
+            &:hover{
+              transform: scale(1.05);
+            }
+            // image inside button
+            img {
               padding: 7px 0 0 20px;
             }
-            .button__text{
+            // text inside button
+            .button__text {
               @include ctabutton;
               padding: 15px 0 0 12px;
             }
           }
-          &__button_second{
+          //styles for second button
+          &__button_second {
             @include bb;
-            img{
-              padding:11px 0 0 27px;
+            transition: transform 0.3s ease;
+            &:hover{
+              transform: scale(1.05);
             }
-            .button__text{
+            // image inside button
+            img {
+              padding: 11px 0 0 27px;
+            }
+            // text inside button
+            .button__text {
               @include ctabutton;
               padding: 15px 0 0 15px;
             }
           }
         }
       }
-      .slick-dots {
-        border-radius: 0 0 5px 5px;
-        margin: 137px 0 16px 39.8%;
-        li {
-          margin: 31px 4px;
-          button{
-            height: 12px;
-            width: 12px;
-          }
-        }
+    }
+  }
+  //styles for dots
+  .slider-dots {
+    position: absolute;
+    top: 610px;
+    left: 49.2%;
+    text-align: center;
+    margin-top: 10px;
+    .dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: rgba(255,255,255,0.0);
+      border: 3px solid #ffffff;
+      border-radius: 50%;
+      margin: 0 3px;
+      cursor: pointer;
+      &--active {
+        background-color: white;
       }
     }
   }

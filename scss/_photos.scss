@@ -1,11 +1,12 @@
 .photos{
   .container-custom{
+    //title
     h2{
       font-family: 'Montserrat', sans-serif;
       font-size: 48px;
       line-height: 1.2;
       font-weight: 600;
-      color: #f06464;
+      color: $red;
       @include mtl(69px,12.3%);
     }
     .photos-info{
@@ -24,12 +25,13 @@
     .image-container {
       position: relative;
       padding: 0;
+      //the area that is superimposed on the photo
       .overlay {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: #151515;
+        background-color: $black;
         overflow: hidden;
         width: 100%;
         height: 0;
@@ -49,12 +51,13 @@
           p{
             display: inline-block;
           }
+          //container for likes and text in overlay
           .likes{
             position: absolute;
             right: -3px;
             top: -1px;
             i{
-              color: #f06464;
+              color: $red;
               display: inline-block;
               width: 25px;
               height: 31px;
@@ -64,12 +67,13 @@
               font-size: 24px;
               line-height: 27px;
               font-weight: 400;
-              color: #f06464;
+              color: $red;
             }
           }
         }
       }
       &:hover{
+        //lifting the picture
         img {
           transform: translateY(-10.5%) scale(1, 0.936);
           transition: .5s ease;

@@ -1,6 +1,7 @@
 .share{
   background-color: #262626;
   .container-custom{
+    //share photo
     .share-img{
       margin-top: 72px;
       margin-left: 3.89%;
@@ -13,6 +14,7 @@
           margin: 31px 4px;
         }
       }
+      //title
       &__title{
         h3{
           padding-top: 182px;
@@ -21,32 +23,36 @@
           font-size: 48px;
           line-height: 1.2;
           font-weight: 600;
-          color: white;
+          color: $white;
         }
       }
+      //test about share
       &__info{
         @include ptl(13px,6px);
         font-size: 18px;
         letter-spacing: 0;
         line-height: 27px;
         font-weight: 400;
-        color: #aeaeae;
+        color: $gray-light;
       }
+      //slider
       &__slider-list{
         .slider-item{
           display: flex;
+          //slider image
           &__img{
             @include mtl(51px,7px);
             width: 170px;
             height: 93px;
           }
+          //slider text
           &__paragraph{
             @include mtl(46px,31px);
             padding-right: 12px;
             font-size: 16px;
             line-height: 24px;
             font-weight: 400;
-            color: #aeaeae;
+            color: $gray-light;
           }
         }
       }

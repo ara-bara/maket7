@@ -1,18 +1,21 @@
 .new-features{
-  background-color: #313131;
+  background-color: $black;
   .container-custom{
+    //left part of block new-features
     .new-features__img{
       margin-top: 54px;
       margin-left: 12px;
     }
+    //right part of block new-features
     .features-item{
       margin-left: 5.8%;
       ul{
         padding-left: 30px;
       }
+      //styles for slick dots
       .slick-dots {
         height: 43px;
-        background: #f06464;
+        background: $red;
         border-radius: 0 0 5px 5px;
         li {
           margin: 31px 4px;
@@ -22,6 +25,7 @@
           }
         }
       }
+      // features title
       &__title{
         font-family: 'Montserrat', sans-serif;
         @include mtl(167px,69px);
@@ -29,8 +33,9 @@
         letter-spacing: 1.6px;
         line-height: 1.2;
         font-weight: 600;
-        color: #ffffff;
+        color: $white;
       }
+      // features text
       &__info{
         @include mtl(24px,73px);
         padding-right: 20px;
@@ -40,14 +45,16 @@
         color: #aeaeae;
         letter-spacing: 0.02px;
       }
+      //list of items
       &__slider-list{
         width: 470px;
         margin-left: 72px;
+        //style for item
         .slider-item {
           margin-top: 66px;
           display: flex;
           height: 189px;
-          background-color: #ffffff;
+          background-color: $white;
           border-radius: 5px 5px 0 0;
           &__img{
             width: 89px;
@@ -60,7 +67,7 @@
               font-size: 18px;
               line-height: 24px;
               font-weight: 400;
-              color: #cc5858;
+              color: $red;
               @include mtl(33px,28px);
               letter-spacing: 0.2px;
             }
