@@ -17,7 +17,7 @@
   .banner {
     &__list {
       .cta-block {
-        background: #de5d5d url('../img/iphone.png') 50% 0 no-repeat;
+        background: $red url('../img/iphone.png') 50% 0 no-repeat;
       }
     }
   }
@@ -217,7 +217,7 @@
     }
   }
   .share{
-    background-color: #262626;
+    background-color: $black;
     .container-custom{
       .share-img{
         //centering photo
@@ -386,7 +386,7 @@
 
 @media (max-width: 991px) {
   .new-features{
-    background-color: #313131;
+    background-color: $light-black;
     .container-custom{
       .new-features__img {
         margin: 0;

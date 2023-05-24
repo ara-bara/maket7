@@ -1,3 +1,5 @@
+@import "_variables.scss";
+@import "_mixin.scss";
 footer{
   background: $bark-white;
   padding-bottom: 79px;
@@ -7,7 +9,7 @@ footer{
     font-size: 18px;
     line-height: 1.2;
     font-weight: 600;
-    color: $gray;
+    color: $light-gray;
     //padding top and left
     @include ptl(94px,5.4%);
     letter-spacing: 0.08px;
@@ -21,7 +23,7 @@ footer{
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
-        color: #666666;
+        color: $light-gray;
         margin-left: 3px;
       }
       .email-form{
@@ -56,6 +58,9 @@ footer{
           background-color: $red;
           border-radius: 5px;
           color: $white;
+          &:hover{
+            transform: scale(1.05);
+          }
           span{
             font-size: 16px;
             line-height: 24px;

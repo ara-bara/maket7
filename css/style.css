@@ -128,15 +128,19 @@ main {
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   border-radius: 50%;
 }
 
 .slick-dots li.slick-active button {
-  background-color: #ffffff;
+  background-color: #fff;
   opacity: 1;
 }
 
+/* banner button*/
+/* cta button style */
+/*margin top and left*/
+/*margin top and left*/
 .navbar {
   height: 98px;
   width: 100%;
@@ -201,7 +205,7 @@ main {
   font-family: "Montserrat", sans-serif;
   padding-top: 16.58%;
   padding-left: 1.2%;
-  color: #ffffff;
+  color: #fff;
   font-size: 90px;
   font-weight: 600;
   font-style: normal;
@@ -275,15 +279,19 @@ main {
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0);
-  border: 3px solid #ffffff;
+  border: 3px solid #fff;
   border-radius: 50%;
   margin: 0 3px;
   cursor: pointer;
 }
 .banner .slider-dots .dot--active {
-  background-color: white;
+  background-color: #fff;
 }
 
+/* banner button*/
+/* cta button style */
+/*margin top and left*/
+/*margin top and left*/
 .benefits {
   margin-bottom: 113px;
 }
@@ -353,6 +361,10 @@ main {
   line-height: 23.5px;
 }
 
+/* banner button*/
+/* cta button style */
+/*margin top and left*/
+/*margin top and left*/
 .share {
   background-color: #262626;
 }
@@ -406,8 +418,12 @@ main {
   color: #aeaeae;
 }
 
+/* banner button*/
+/* cta button style */
+/*margin top and left*/
+/*margin top and left*/
 .new-features {
-  background-color: #151515;
+  background-color: #313131;
 }
 .new-features .container-custom .new-features__img {
   margin-top: 54px;
@@ -489,6 +505,10 @@ main {
   letter-spacing: 0.1px;
 }
 
+/* banner button*/
+/* cta button style */
+/*margin top and left*/
+/*margin top and left*/
 .photos .container-custom h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
@@ -531,7 +551,7 @@ main {
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
-  color: #c2c2c2;
+  color: #cbcbcb;
   position: absolute;
   top: 55%;
   left: 49.5%;
@@ -594,6 +614,10 @@ main {
   width: 420px;
 }
 
+/* banner button*/
+/* cta button style */
+/*margin top and left*/
+/*margin top and left*/
 .cta {
   background-color: #de5d5d;
 }
@@ -684,6 +708,10 @@ main {
   padding: 16px 0 0 15px;
 }
 
+/* banner button*/
+/* cta button style */
+/*margin top and left*/
+/*margin top and left*/
 .compatibility {
   background-color: #cbcbcb;
   padding: 85px 0 120px 0;
@@ -745,6 +773,10 @@ main {
   margin-left: 1px;
 }
 
+/* banner button*/
+/* cta button style */
+/*margin top and left*/
+/*margin top and left*/
 footer {
   background: #f4f4f4;
   padding-bottom: 79px;
@@ -754,7 +786,7 @@ footer .copyright {
   font-size: 18px;
   line-height: 1.2;
   font-weight: 600;
-  color: #cbcbcb;
+  color: #666666;
   padding-top: 94px;
   padding-left: 5.4%;
   letter-spacing: 0.08px;
@@ -805,6 +837,9 @@ footer .registration-form form .email-form button {
   background-color: #de5d5d;
   border-radius: 5px;
   color: #fff;
+}
+footer .registration-form form .email-form button:hover {
+  transform: scale(1.05);
 }
 footer .registration-form form .email-form button span {
   font-size: 16px;
@@ -960,7 +995,7 @@ footer .registration-form form .email-form button span {
     margin: -4px auto 0 auto;
   }
   .share {
-    background-color: #262626;
+    background-color: #151515;
   }
   .share .container-custom .share-img img {
     margin: 30px auto 0 auto;

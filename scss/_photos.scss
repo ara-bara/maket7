@@ -1,3 +1,5 @@
+@import "_mixin.scss";
+@import "_variables.scss";
 .photos{
   .container-custom{
     //title
@@ -14,7 +16,7 @@
       font-size: 18px;
       line-height: 27px;
       font-weight: 400;
-      color: #666666;
+      color: $light-gray;
       letter-spacing: 0.07px;
       max-width: 450px;
       margin-bottom: 78px;
@@ -40,7 +42,7 @@
           font-size: 18px;
           line-height: 27px;
           font-weight: 400;
-          color: #c2c2c2;
+          color: $gray;
           position: absolute;
           top: 55%;
           left: 49.5%;

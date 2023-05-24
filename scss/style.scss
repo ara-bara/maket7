@@ -35,7 +35,7 @@ main{
   margin-right: auto;
   margin-left: auto;
 }
-
+//styles for slick slider
 .slick-track{
   display: flex;
 }
@@ -44,6 +44,7 @@ main{
   overflow: hidden;
 }
 
+//default styles for slick dots
 .slick-dots {
   display: flex;
   align-items: center;
@@ -54,14 +55,15 @@ main{
       width: 12px;
       height: 12px;
       background-color: rgba(255,255,255,0.0);
-      border: 2px solid #ffffff;
+      border: 2px solid $white;
       border-radius: 50%;
     }
   }
 }
 
+//slick dot active
 .slick-dots li.slick-active button {
-  background-color: #ffffff;
+  background-color: $white;
   opacity: 1;
 }
 

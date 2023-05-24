@@ -1,5 +1,7 @@
+@import "_variables.scss";
+@import "_mixin.scss";
 .new-features{
-  background-color: $black;
+  background-color: $light-black;
   .container-custom{
     //left part of block new-features
     .new-features__img{
@@ -42,7 +44,7 @@
         font-size: 18px;
         line-height: 27px;
         font-weight: 400;
-        color: #aeaeae;
+        color: $gray-light;
         letter-spacing: 0.02px;
       }
       //list of items
@@ -76,7 +78,7 @@
               font-size: 16px;
               line-height: 24px;
               font-weight: 400;
-              color: #666666;
+              color: $light-gray;
               padding-right: 50px;
               letter-spacing: 0.1px;
             }

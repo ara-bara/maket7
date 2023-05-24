@@ -1,3 +1,5 @@
+@import "_variables.scss";
+@import "_mixin.scss";
 .benefits{
   margin-bottom: 113px;
   .container-custom{
@@ -10,7 +12,7 @@
       font-size: 48px;
       line-height: 1.2;
       font-weight: 600;
-      color: #3a3a3a;
+      color: $gray64;
     }
     //list of items
     .benefits-list{
